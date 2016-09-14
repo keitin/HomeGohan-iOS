@@ -7,10 +7,19 @@
 //
 
 import Foundation
+import Alamofire
+import SwiftyJSON
+
 class User {
     var name: String!
     var imageURL: String!
     var id: Int!
+    
+    init(json: JSON) {      
+        self.id = json["id"].int!
+        self.name = json["name"].string!
+        self.imageURL = json["image_url"].string!
+    }
     
     init(id: Int, name: String, imageURL: String) {
         self.id = id

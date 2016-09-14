@@ -105,7 +105,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJb-Az-Hcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2423" y="559"/>
+            <point key="canvasLocation" x="2349" y="528"/>
+        </scene>
+        <!--Meal Show View Controller-->
+        <scene sceneID="Vs7-64-2Ct">
+            <objects>
+                <viewController storyboardIdentifier="MealShowViewController" id="XoU-Gv-uf0" customClass="MealShowViewController" customModule="HomeGohan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tuE-R3-mwq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fp4-uP-5yG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gd9-Uf-igw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C93-lx-hNp">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C93-lx-hNp" firstAttribute="leading" secondItem="Gd9-Uf-igw" secondAttribute="leading" id="UQX-Ge-6QQ"/>
+                            <constraint firstItem="C93-lx-hNp" firstAttribute="top" secondItem="tuE-R3-mwq" secondAttribute="bottom" id="er4-2V-4f6"/>
+                            <constraint firstItem="Fp4-uP-5yG" firstAttribute="top" secondItem="C93-lx-hNp" secondAttribute="bottom" id="o0V-1D-VPc"/>
+                            <constraint firstAttribute="trailing" secondItem="C93-lx-hNp" secondAttribute="trailing" id="vKl-mQ-U2B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="C93-lx-hNp" id="Zcx-Au-Zvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYV-3w-Xah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="537"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qIX-1Q-Xp4">
@@ -115,6 +148,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="i7J-Uv-M0K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -133,6 +168,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="K1X-ee-9Cq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -141,7 +180,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51H-09-5mQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727" y="567"/>
+            <point key="canvasLocation" x="1665" y="528"/>
         </scene>
     </scenes>
     <resources>

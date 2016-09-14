@@ -8,13 +8,20 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 struct Meal {
     var imageURL: String?
     var text: String
-    var user: User
+    var user: User!
     var image: UIImage?
 
+    init(json: JSON) {
+        self.imageURL = API.baseURL + json["meal"]["image_url"]["url"].string!
+        self.text = json["meal"]["text"].string!
+        self.user = User(json: json["user"])
+    }
+    
     init(imageURL: String, text: String, user: User) {
         self.imageURL = imageURL
         self.text = text
