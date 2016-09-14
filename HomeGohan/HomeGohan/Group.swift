@@ -9,11 +9,13 @@
 import Foundation
 
 struct Group {
+    var id: Int
     var name: String
     var imageURL: String
     
-    init(name: String, imageURL: String) {
+    init(id: Int, name: String, imageURL: String) {
         self.name = name
         self.imageURL = imageURL
+        self.id = id
     }
 }

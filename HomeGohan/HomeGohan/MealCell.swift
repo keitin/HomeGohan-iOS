@@ -27,7 +27,7 @@ class MealCell: UITableViewCell {
     }
     
     func fillWith(meal: Meal) {
-        self.mealImageView.sd_setImageWithURL(NSURL(string: meal.imageURL))
+        self.mealImageView.sd_setImageWithURL(NSURL(string: meal.imageURL!))
         self.commentLabel.text = meal.text
         self.nameLabel.text = meal.user.name
         self.userImageView.sd_setImageWithURL(NSURL(string: meal.user.imageURL))

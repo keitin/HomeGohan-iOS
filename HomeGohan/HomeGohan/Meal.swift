@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 struct Meal {
     var imageURL: String?
@@ -26,7 +27,24 @@ struct Meal {
         self.user = user
     }
     
-    func requestCreate(completion: () -> Void) {
+    func requestCreate(group: Group, completion: () -> Void) {
+        let params: [String: AnyObject] = [
+            "user_id": CurrentUser.sharedInstance.id,
+            "text": self.text,
+            "group_id": group.id
+        ]
+        let pass = API.baseURL +  "/api/meals"
+        let httpMethod = Alamofire.Method.POST.rawValue
         
+        let urlRequest = NSData.urlRequestWithComponents(httpMethod, urlString: pass, parameters: params, image: self.image!)
+        Alamofire.upload(urlRequest.0, data: urlRequest.1)
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let value):
+                    print(value)
+                case .Failure(let error):
+                    print(error)
+                }
+        }
     }
 }

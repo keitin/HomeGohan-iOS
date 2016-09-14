@@ -12,6 +12,7 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     let viewModel = MealIndexViewModel()
+    var group = Group(id: 1, name: "清水淳子", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,9 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
     }
     
     func modalNewMealVC(sender: UIBarButtonItem) {
-        let newMealNC = UIStoryboard.viewControllerWith("Meal", identifier: "NewMealNC")
+        let newMealNC = UIStoryboard.viewControllerWith("Meal", identifier: "NewMealNC") as! UINavigationController
+        let newMealVC = newMealNC.viewControllers.first as! NewMealViewController
+        newMealVC.group = self.group
         self.presentViewController(newMealNC, animated: true, completion: nil)
     }
     

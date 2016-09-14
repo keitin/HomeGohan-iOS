@@ -32,6 +32,8 @@
 		32301F221D897E7400B08C3F /* NewMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F211D897E7400B08C3F /* NewMealViewController.swift */; };
 		32301F241D8982F900B08C3F /* omoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 32301F231D8982F900B08C3F /* omoto.png */; };
 		32301F271D8985F300B08C3F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F261D8985F300B08C3F /* CurrentUser.swift */; };
+		32301F291D89886E00B08C3F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F281D89886E00B08C3F /* API.swift */; };
+		32301F2B1D89893600B08C3F /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F2A1D89893600B08C3F /* NSData+Extension.swift */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -87,6 +89,8 @@
 		32301F211D897E7400B08C3F /* NewMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMealViewController.swift; sourceTree = "<group>"; };
 		32301F231D8982F900B08C3F /* omoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = omoto.png; sourceTree = "<group>"; };
 		32301F261D8985F300B08C3F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		32301F281D89886E00B08C3F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		32301F2A1D89893600B08C3F /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				32301F0E1D89634500B08C3F /* UITableView+Extension.swift */,
 				32301F191D8968BE00B08C3F /* UIFont+Extension.swift */,
 				32301F1B1D8969BE00B08C3F /* UIColor+Extension.swift */,
+				32301F2A1D89893600B08C3F /* NSData+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				32301F1D1D897AD200B08C3F /* Meal.swift */,
 				32301F1F1D897B1500B08C3F /* User.swift */,
 				32301F261D8985F300B08C3F /* CurrentUser.swift */,
+				32301F281D89886E00B08C3F /* API.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -587,6 +593,7 @@
 				32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */,
 				32301F1C1D8969BE00B08C3F /* UIColor+Extension.swift in Sources */,
 				32301F0B1D89621A00B08C3F /* MealIndexViewModel.swift in Sources */,
+				32301F2B1D89893600B08C3F /* NSData+Extension.swift in Sources */,
 				32301F201D897B1500B08C3F /* User.swift in Sources */,
 				32301EC91D89518F00B08C3F /* AppDelegate.swift in Sources */,
 				32301EFC1D895D6900B08C3F /* MealIndexViewController.swift in Sources */,
@@ -596,6 +603,7 @@
 				32301EFA1D895CF500B08C3F /* UIStoryboard+Extension.swift in Sources */,
 				32301F0F1D89634500B08C3F /* UITableView+Extension.swift in Sources */,
 				32301F271D8985F300B08C3F /* CurrentUser.swift in Sources */,
+				32301F291D89886E00B08C3F /* API.swift in Sources */,
 				32301F1A1D8968BE00B08C3F /* UIFont+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,9 @@ import UIKit
 
 class MealIndexViewModel: NSObject, UITableViewDataSource {
     
-    var group = Group(name: "清水淳子", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg")
+    var group = Group(id: 1, name: "清水淳子", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg")
     var meal = Meal(imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg",
-                    text: "作ったんだよ！見てみて！！", user: User(name: "シミズ", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg"))
+                    text: "作ったんだよ！見てみて！！", user: User(id: 1, name: "シミズ", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg"))
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2

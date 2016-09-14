@@ -12,6 +12,7 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
     
     @IBOutlet weak var mealImageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
+    var group: Group!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
     @IBAction func tapSendButton(sender: UIButton) {
         let user = CurrentUser.sharedInstance
         let meal = Meal(image: self.mealImageView.image!, text: self.textView.text, user: user)
-        meal.requestCreate { 
+        meal.requestCreate(self.group!) {
             print("hoge")
         }
     }
