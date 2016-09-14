@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class GroupProfCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
@@ -22,8 +23,9 @@ class GroupProfCell: UITableViewCell {
 
     }
     
-    func fillWith() {
-        
+    func fillWith(group: Group) {
+        self.profileImageView.sd_setImageWithURL(NSURL(string: group.imageURL))
+        self.nameLabel.text = group.name
     }
     
     private func layoutProfImageView() {

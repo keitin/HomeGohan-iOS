@@ -36,7 +36,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56S-Cs-HfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1083" y="528"/>
+            <point key="canvasLocation" x="981" y="528"/>
+        </scene>
+        <!--New Meal View Controller-->
+        <scene sceneID="Ufw-2N-sx4">
+            <objects>
+                <viewController storyboardIdentifier="NewMealViewController" id="7Vy-0O-3lh" customClass="NewMealViewController" customModule="HomeGohan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="peV-8l-PVF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pjv-rh-WgZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vr7-vx-IBD">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="omoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="7La-B4-NOZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="Y5H-sg-5bd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCe-Wi-xW8">
+                                <rect key="frame" x="0.0" y="265" width="600" height="224"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="svy-eK-LgE">
+                                <rect key="frame" x="0.0" y="265" width="600" height="224"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-as-Xtc">
+                                <rect key="frame" x="0.0" y="489" width="600" height="47"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="xhQ-Jh-BWA"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="送信する"/>
+                                <connections>
+                                    <action selector="tapSendButton:" destination="7Vy-0O-3lh" eventType="touchUpInside" id="bqY-GA-wry"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pjv-rh-WgZ" firstAttribute="top" secondItem="SZz-as-Xtc" secondAttribute="bottom" id="98n-fz-11a"/>
+                            <constraint firstItem="SZz-as-Xtc" firstAttribute="top" secondItem="svy-eK-LgE" secondAttribute="bottom" id="9l1-L3-KV7"/>
+                            <constraint firstItem="HCe-Wi-xW8" firstAttribute="top" secondItem="7La-B4-NOZ" secondAttribute="bottom" id="AUg-yJ-YGw"/>
+                            <constraint firstItem="svy-eK-LgE" firstAttribute="top" secondItem="7La-B4-NOZ" secondAttribute="bottom" id="BBz-N6-VRt"/>
+                            <constraint firstItem="svy-eK-LgE" firstAttribute="leading" secondItem="Vr7-vx-IBD" secondAttribute="leading" id="E63-Mx-FYV"/>
+                            <constraint firstItem="7La-B4-NOZ" firstAttribute="top" secondItem="peV-8l-PVF" secondAttribute="bottom" id="EB2-Xa-Zho"/>
+                            <constraint firstAttribute="trailing" secondItem="svy-eK-LgE" secondAttribute="trailing" id="MnY-bu-gft"/>
+                            <constraint firstAttribute="trailing" secondItem="SZz-as-Xtc" secondAttribute="trailing" id="VKL-5s-JMz"/>
+                            <constraint firstAttribute="trailing" secondItem="7La-B4-NOZ" secondAttribute="trailing" id="XhH-qJ-v4u"/>
+                            <constraint firstItem="HCe-Wi-xW8" firstAttribute="leading" secondItem="Vr7-vx-IBD" secondAttribute="leading" id="YEK-Ov-3ap"/>
+                            <constraint firstItem="7La-B4-NOZ" firstAttribute="leading" secondItem="Vr7-vx-IBD" secondAttribute="leading" id="c8V-me-Unc"/>
+                            <constraint firstAttribute="trailing" secondItem="HCe-Wi-xW8" secondAttribute="trailing" id="dHx-8A-1Mm"/>
+                            <constraint firstItem="SZz-as-Xtc" firstAttribute="leading" secondItem="Vr7-vx-IBD" secondAttribute="leading" id="sBJ-QH-bqp"/>
+                            <constraint firstItem="SZz-as-Xtc" firstAttribute="top" secondItem="HCe-Wi-xW8" secondAttribute="bottom" id="zw8-3a-HCa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ULh-8Q-nLZ"/>
+                    <connections>
+                        <outlet property="mealImageView" destination="7La-B4-NOZ" id="3rI-3S-6tM"/>
+                        <outlet property="textView" destination="svy-eK-LgE" id="4ys-ET-Bnl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJb-Az-Hcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2423" y="559"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qIX-1Q-Xp4">
@@ -56,5 +125,26 @@
             </objects>
             <point key="canvasLocation" x="271" y="528"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ncr-2f-DUv">
+            <objects>
+                <navigationController storyboardIdentifier="NewMealNC" automaticallyAdjustsScrollViewInsets="NO" id="E3z-Kb-Rqv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="K1X-ee-9Cq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Vy-0O-3lh" kind="relationship" relationship="rootViewController" id="lPk-G0-ANd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51H-09-5mQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="567"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="omoto.png" width="392" height="381"/>
+    </resources>
 </document>

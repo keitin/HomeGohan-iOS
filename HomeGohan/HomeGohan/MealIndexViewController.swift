@@ -19,10 +19,29 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
         self.setTableView()
         self.viewModel.registerCell(tableView)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.addSubViewBarItems()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: Table View Delegate
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 200
+        } else {
+            return 111
+        }
+    }
+    
+    func modalNewMealVC(sender: UIBarButtonItem) {
+        let newMealNC = UIStoryboard.viewControllerWith("Meal", identifier: "NewMealNC")
+        self.presentViewController(newMealNC, animated: true, completion: nil)
     }
     
     private func setTableView() {
@@ -30,15 +49,8 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
         self.tableView.dataSource = viewModel
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func addSubViewBarItems() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .Done, target: self, action: #selector(MealIndexViewController.modalNewMealVC(_:)))
     }
-    */
-
+    
 }

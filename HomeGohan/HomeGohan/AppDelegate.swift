@@ -15,9 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    
+        let _ = CurrentUser(name: "シミズ", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg")
         
         let mealsIndexVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealNC")
         self.window?.rootViewController = mealsIndexVC
+    
         
         return true
     }

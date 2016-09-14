@@ -23,6 +23,15 @@
 		32301F0B1D89621A00B08C3F /* MealIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F0A1D89621A00B08C3F /* MealIndexViewModel.swift */; };
 		32301F0F1D89634500B08C3F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F0E1D89634500B08C3F /* UITableView+Extension.swift */; };
 		32301F111D8963F400B08C3F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F101D8963F400B08C3F /* Group.swift */; };
+		32301F161D89671600B08C3F /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F141D89671600B08C3F /* MealCell.swift */; };
+		32301F171D89671600B08C3F /* MealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32301F151D89671600B08C3F /* MealCell.xib */; };
+		32301F1A1D8968BE00B08C3F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F191D8968BE00B08C3F /* UIFont+Extension.swift */; };
+		32301F1C1D8969BE00B08C3F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F1B1D8969BE00B08C3F /* UIColor+Extension.swift */; };
+		32301F1E1D897AD200B08C3F /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F1D1D897AD200B08C3F /* Meal.swift */; };
+		32301F201D897B1500B08C3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F1F1D897B1500B08C3F /* User.swift */; };
+		32301F221D897E7400B08C3F /* NewMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F211D897E7400B08C3F /* NewMealViewController.swift */; };
+		32301F241D8982F900B08C3F /* omoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 32301F231D8982F900B08C3F /* omoto.png */; };
+		32301F271D8985F300B08C3F /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F261D8985F300B08C3F /* CurrentUser.swift */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -69,6 +78,15 @@
 		32301F0A1D89621A00B08C3F /* MealIndexViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealIndexViewModel.swift; sourceTree = "<group>"; };
 		32301F0E1D89634500B08C3F /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		32301F101D8963F400B08C3F /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		32301F141D89671600B08C3F /* MealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		32301F151D89671600B08C3F /* MealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealCell.xib; sourceTree = "<group>"; };
+		32301F191D8968BE00B08C3F /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		32301F1B1D8969BE00B08C3F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		32301F1D1D897AD200B08C3F /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		32301F1F1D897B1500B08C3F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32301F211D897E7400B08C3F /* NewMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMealViewController.swift; sourceTree = "<group>"; };
+		32301F231D8982F900B08C3F /* omoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = omoto.png; sourceTree = "<group>"; };
+		32301F261D8985F300B08C3F /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,12 +151,13 @@
 			isa = PBXGroup;
 			children = (
 				32301EC81D89518F00B08C3F /* AppDelegate.swift */,
+				32301EF81D895CC900B08C3F /* Stroryboards */,
 				32301F121D89642E00B08C3F /* Models */,
 				32301F041D895F5300B08C3F /* Views */,
-				32301EF81D895CC900B08C3F /* Stroryboards */,
 				32301F0C1D89621D00B08C3F /* ViewModels */,
 				32301EFE1D895EA500B08C3F /* Controllers */,
 				32301EFD1D895E9400B08C3F /* Extension */,
+				32301F251D8982FC00B08C3F /* Images */,
 				32301ECF1D89518F00B08C3F /* Assets.xcassets */,
 				32301ED11D89518F00B08C3F /* LaunchScreen.storyboard */,
 				32301ED41D89518F00B08C3F /* Info.plist */,
@@ -180,6 +199,8 @@
 				32301F061D89602000B08C3F /* UIView+Extension.swift */,
 				32301F081D89606F00B08C3F /* UIImageView+Extension.swift */,
 				32301F0E1D89634500B08C3F /* UITableView+Extension.swift */,
+				32301F191D8968BE00B08C3F /* UIFont+Extension.swift */,
+				32301F1B1D8969BE00B08C3F /* UIColor+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -196,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				32301EFB1D895D6900B08C3F /* MealIndexViewController.swift */,
+				32301F211D897E7400B08C3F /* NewMealViewController.swift */,
 			);
 			name = Meals;
 			sourceTree = "<group>";
@@ -211,8 +233,8 @@
 		32301F051D895F5C00B08C3F /* Meals */ = {
 			isa = PBXGroup;
 			children = (
-				32301F001D895F4F00B08C3F /* GroupProfCell.swift */,
-				32301F011D895F4F00B08C3F /* GroupProfCell.xib */,
+				32301F131D8966DA00B08C3F /* GroupProf */,
+				32301F181D89671A00B08C3F /* MealCell */,
 			);
 			name = Meals;
 			sourceTree = "<group>";
@@ -237,8 +259,37 @@
 			isa = PBXGroup;
 			children = (
 				32301F101D8963F400B08C3F /* Group.swift */,
+				32301F1D1D897AD200B08C3F /* Meal.swift */,
+				32301F1F1D897B1500B08C3F /* User.swift */,
+				32301F261D8985F300B08C3F /* CurrentUser.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		32301F131D8966DA00B08C3F /* GroupProf */ = {
+			isa = PBXGroup;
+			children = (
+				32301F001D895F4F00B08C3F /* GroupProfCell.swift */,
+				32301F011D895F4F00B08C3F /* GroupProfCell.xib */,
+			);
+			name = GroupProf;
+			sourceTree = "<group>";
+		};
+		32301F181D89671A00B08C3F /* MealCell */ = {
+			isa = PBXGroup;
+			children = (
+				32301F141D89671600B08C3F /* MealCell.swift */,
+				32301F151D89671600B08C3F /* MealCell.xib */,
+			);
+			name = MealCell;
+			sourceTree = "<group>";
+		};
+		32301F251D8982FC00B08C3F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				32301F231D8982F900B08C3F /* omoto.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		98A796D8F57F5E799093D501 /* Frameworks */ = {
@@ -376,7 +427,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32301F171D89671600B08C3F /* MealCell.xib in Resources */,
 				32301ED31D89518F00B08C3F /* LaunchScreen.storyboard in Resources */,
+				32301F241D8982F900B08C3F /* omoto.png in Resources */,
 				32301EF71D895CC500B08C3F /* Meal.storyboard in Resources */,
 				32301ED01D89518F00B08C3F /* Assets.xcassets in Resources */,
 				32301F031D895F4F00B08C3F /* GroupProfCell.xib in Resources */,
@@ -528,15 +581,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32301F161D89671600B08C3F /* MealCell.swift in Sources */,
 				32301F111D8963F400B08C3F /* Group.swift in Sources */,
+				32301F1E1D897AD200B08C3F /* Meal.swift in Sources */,
 				32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */,
+				32301F1C1D8969BE00B08C3F /* UIColor+Extension.swift in Sources */,
 				32301F0B1D89621A00B08C3F /* MealIndexViewModel.swift in Sources */,
+				32301F201D897B1500B08C3F /* User.swift in Sources */,
 				32301EC91D89518F00B08C3F /* AppDelegate.swift in Sources */,
 				32301EFC1D895D6900B08C3F /* MealIndexViewController.swift in Sources */,
+				32301F221D897E7400B08C3F /* NewMealViewController.swift in Sources */,
 				32301F021D895F4F00B08C3F /* GroupProfCell.swift in Sources */,
 				32301F071D89602000B08C3F /* UIView+Extension.swift in Sources */,
 				32301EFA1D895CF500B08C3F /* UIStoryboard+Extension.swift in Sources */,
 				32301F0F1D89634500B08C3F /* UITableView+Extension.swift in Sources */,
+				32301F271D8985F300B08C3F /* CurrentUser.swift in Sources */,
+				32301F1A1D8968BE00B08C3F /* UIFont+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
