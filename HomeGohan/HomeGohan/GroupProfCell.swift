@@ -22,6 +22,10 @@ class GroupProfCell: UITableViewCell {
 
     }
     
+    func fillWith() {
+        
+    }
+    
     private func layoutProfImageView() {
         self.profileImageView.makeCircle()
         self.profileImageView.makeAspectFill()

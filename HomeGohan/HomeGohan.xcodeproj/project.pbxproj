@@ -20,6 +20,12 @@
 		32301F031D895F4F00B08C3F /* GroupProfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32301F011D895F4F00B08C3F /* GroupProfCell.xib */; };
 		32301F071D89602000B08C3F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F061D89602000B08C3F /* UIView+Extension.swift */; };
 		32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F081D89606F00B08C3F /* UIImageView+Extension.swift */; };
+		32301F0B1D89621A00B08C3F /* MealIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F0A1D89621A00B08C3F /* MealIndexViewModel.swift */; };
+		32301F0F1D89634500B08C3F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F0E1D89634500B08C3F /* UITableView+Extension.swift */; };
+		32301F111D8963F400B08C3F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F101D8963F400B08C3F /* Group.swift */; };
+		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
+		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
+		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32301EC51D89518F00B08C3F /* HomeGohan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeGohan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32301EC81D89518F00B08C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32301ECD1D89518F00B08C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +66,17 @@
 		32301F011D895F4F00B08C3F /* GroupProfCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupProfCell.xib; sourceTree = "<group>"; };
 		32301F061D89602000B08C3F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		32301F081D89606F00B08C3F /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		32301F0A1D89621A00B08C3F /* MealIndexViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealIndexViewModel.swift; sourceTree = "<group>"; };
+		32301F0E1D89634500B08C3F /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		32301F101D8963F400B08C3F /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
+		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9D1B5CD4CAB4631C8E79C6A /* Pods-HomeGohanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanUITests/Pods-HomeGohanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB676B5A93F4820D4601BEB5 /* Pods-HomeGohan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.debug.xcconfig"; sourceTree = "<group>"; };
+		CA8A9E3367FEB4740FB1B830 /* Pods-HomeGohanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0436D732647DB1D700511F /* Pods-HomeGohanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanUITests/Pods-HomeGohanUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +114,8 @@
 				32301EDC1D89518F00B08C3F /* HomeGohanTests */,
 				32301EE71D89518F00B08C3F /* HomeGohanUITests */,
 				32301EC61D89518F00B08C3F /* Products */,
+				DD90B81B20921FBA93367EDF /* Pods */,
+				98A796D8F57F5E799093D501 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				32301EC81D89518F00B08C3F /* AppDelegate.swift */,
+				32301F121D89642E00B08C3F /* Models */,
 				32301F041D895F5300B08C3F /* Views */,
 				32301EF81D895CC900B08C3F /* Stroryboards */,
+				32301F0C1D89621D00B08C3F /* ViewModels */,
 				32301EFE1D895EA500B08C3F /* Controllers */,
 				32301EFD1D895E9400B08C3F /* Extension */,
 				32301ECF1D89518F00B08C3F /* Assets.xcassets */,
@@ -154,6 +179,7 @@
 				32301EF91D895CF500B08C3F /* UIStoryboard+Extension.swift */,
 				32301F061D89602000B08C3F /* UIView+Extension.swift */,
 				32301F081D89606F00B08C3F /* UIImageView+Extension.swift */,
+				32301F0E1D89634500B08C3F /* UITableView+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -191,6 +217,53 @@
 			name = Meals;
 			sourceTree = "<group>";
 		};
+		32301F0C1D89621D00B08C3F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				32301F0D1D89629F00B08C3F /* Meals */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		32301F0D1D89629F00B08C3F /* Meals */ = {
+			isa = PBXGroup;
+			children = (
+				32301F0A1D89621A00B08C3F /* MealIndexViewModel.swift */,
+			);
+			name = Meals;
+			sourceTree = "<group>";
+		};
+		32301F121D89642E00B08C3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32301F101D8963F400B08C3F /* Group.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		98A796D8F57F5E799093D501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				835470F73177CBB654063135 /* Pods_HomeGohan.framework */,
+				E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */,
+				01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD90B81B20921FBA93367EDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB676B5A93F4820D4601BEB5 /* Pods-HomeGohan.debug.xcconfig */,
+				58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */,
+				CA8A9E3367FEB4740FB1B830 /* Pods-HomeGohanTests.debug.xcconfig */,
+				A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */,
+				A9D1B5CD4CAB4631C8E79C6A /* Pods-HomeGohanUITests.debug.xcconfig */,
+				EC0436D732647DB1D700511F /* Pods-HomeGohanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32301EED1D89518F00B08C3F /* Build configuration list for PBXNativeTarget "HomeGohan" */;
 			buildPhases = (
+				CF673BD98C0F9E1AC02EA6A0 /* 📦 Check Pods Manifest.lock */,
 				32301EC11D89518F00B08C3F /* Sources */,
 				32301EC21D89518F00B08C3F /* Frameworks */,
 				32301EC31D89518F00B08C3F /* Resources */,
+				7CCFE50764BAFF7FD85A4E53 /* 📦 Embed Pods Frameworks */,
+				ECDA3CFB6634BD7B37FE9D58 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32301EF01D89518F00B08C3F /* Build configuration list for PBXNativeTarget "HomeGohanTests" */;
 			buildPhases = (
+				6BC3C5BEFB7C1F6A7AB01FA1 /* 📦 Check Pods Manifest.lock */,
 				32301ED51D89518F00B08C3F /* Sources */,
 				32301ED61D89518F00B08C3F /* Frameworks */,
 				32301ED71D89518F00B08C3F /* Resources */,
+				5EAE79876C4DE90B7F2C4EA2 /* 📦 Embed Pods Frameworks */,
+				1E18A768655F87E7932EB1D4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32301EF31D89518F00B08C3F /* Build configuration list for PBXNativeTarget "HomeGohanUITests" */;
 			buildPhases = (
+				8A7F83DADD56EFD0B62E4114 /* 📦 Check Pods Manifest.lock */,
 				32301EE01D89518F00B08C3F /* Sources */,
 				32301EE11D89518F00B08C3F /* Frameworks */,
 				32301EE21D89518F00B08C3F /* Resources */,
+				E580F2E5AA8749D3644E20BE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,17 +400,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E18A768655F87E7932EB1D4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EAE79876C4DE90B7F2C4EA2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BC3C5BEFB7C1F6A7AB01FA1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CCFE50764BAFF7FD85A4E53 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A7F83DADD56EFD0B62E4114 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF673BD98C0F9E1AC02EA6A0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E580F2E5AA8749D3644E20BE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeGohanUITests/Pods-HomeGohanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECDA3CFB6634BD7B37FE9D58 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32301EC11D89518F00B08C3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32301F111D8963F400B08C3F /* Group.swift in Sources */,
 				32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */,
+				32301F0B1D89621A00B08C3F /* MealIndexViewModel.swift in Sources */,
 				32301EC91D89518F00B08C3F /* AppDelegate.swift in Sources */,
 				32301EFC1D895D6900B08C3F /* MealIndexViewController.swift in Sources */,
 				32301F021D895F4F00B08C3F /* GroupProfCell.swift in Sources */,
 				32301F071D89602000B08C3F /* UIView+Extension.swift in Sources */,
 				32301EFA1D895CF500B08C3F /* UIStoryboard+Extension.swift in Sources */,
+				32301F0F1D89634500B08C3F /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +676,7 @@
 		};
 		32301EEE1D89518F00B08C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB676B5A93F4820D4601BEB5 /* Pods-HomeGohan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomeGohan/Info.plist;
@@ -480,6 +688,7 @@
 		};
 		32301EEF1D89518F00B08C3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomeGohan/Info.plist;
@@ -491,6 +700,7 @@
 		};
 		32301EF11D89518F00B08C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8A9E3367FEB4740FB1B830 /* Pods-HomeGohanTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HomeGohanTests/Info.plist;
@@ -503,6 +713,7 @@
 		};
 		32301EF21D89518F00B08C3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HomeGohanTests/Info.plist;
@@ -515,6 +726,7 @@
 		};
 		32301EF41D89518F00B08C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D1B5CD4CAB4631C8E79C6A /* Pods-HomeGohanUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HomeGohanUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -526,6 +738,7 @@
 		};
 		32301EF51D89518F00B08C3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0436D732647DB1D700511F /* Pods-HomeGohanUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HomeGohanUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

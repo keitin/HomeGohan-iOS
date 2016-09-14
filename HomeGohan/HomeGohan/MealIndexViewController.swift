@@ -8,18 +8,26 @@
 
 import UIKit
 
-class MealIndexViewController: UIViewController {
+class MealIndexViewController: UIViewController, UITableViewDelegate {
+    
     @IBOutlet weak var tableView: UITableView!
-
+    let viewModel = MealIndexViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.setTableView()
+        self.viewModel.registerCell(tableView)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func setTableView() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = viewModel
     }
     
 
