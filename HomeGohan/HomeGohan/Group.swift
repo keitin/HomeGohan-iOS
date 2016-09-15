@@ -14,6 +14,7 @@ struct Group {
     var id: Int
     var name: String
     var imageURL: String
+    var meals: [Meal] = []
     
     init(id: Int, name: String, imageURL: String) {
         self.name = name
@@ -42,6 +43,28 @@ struct Group {
                     let currentUser = CurrentUser.sharedInstance
                     currentUser.groups.append(group)
                     completion()
+                case .Failure(let error):
+                    completion()
+                    print(error)
+                }
+        }
+    }
+    
+    mutating func requestGetMeals(completion: () -> Void) {
+        let params = [
+            "group_id": self.id
+        ]
+        Alamofire.request(.GET, API.baseURL + "/api/meals", parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let value):
+                    self.meals = []
+                    let json = JSON(value)
+                    for mealJSON in json["meals"].array! {
+                        let meal = Meal(json: mealJSON)
+                        self.meals.append(meal)
+                        completion()
+                    }
                 case .Failure(let error):
                     completion()
                     print(error)

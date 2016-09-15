@@ -29,7 +29,7 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
         let user = CurrentUser.sharedInstance
         let meal = Meal(image: self.mealImageView.image!, text: self.textView.text, user: user)
         meal.requestCreate(self.group!) {
-            print("hoge")
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
     }
     

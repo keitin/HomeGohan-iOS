@@ -52,8 +52,10 @@ struct Meal {
                 switch response.result {
                 case .Success(let value):
                     print(value)
+                    completion()
                 case .Failure(let error):
                     print(error)
+                    completion()
                 }
         }
     }

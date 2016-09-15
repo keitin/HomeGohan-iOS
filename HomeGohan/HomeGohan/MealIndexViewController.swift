@@ -8,27 +8,24 @@
 
 import UIKit
 
-class MealIndexViewController: UIViewController, UITableViewDelegate {
+class MealIndexViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    let viewModel = MealIndexViewModel()
-    let mealManager = MealManager.sharedInstance
-    let group = Group(id: 1, name: "清水淳子", imageURL: "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg")
+    var group: Group!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setTableView()
-        self.viewModel.registerCell(tableView)
-        
-        mealManager.requestGetMeals(group) { 
-            self.tableView.reloadData()
-        }
+        self.registerCell()
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.addSubViewBarItems()
+        group.requestGetMeals() {
+            self.tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,10 +43,12 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let meal = mealManager.meals[indexPath.row]
+        if indexPath.section == 0 {
+            return
+        }
+        let meal = group.meals[indexPath.row]
         let mealShowVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealShowViewController") as! MealShowViewController
         mealShowVC.viewModel.meal = meal
-        
         navigationController?.pushViewController(mealShowVC, animated: true)
     }
     
@@ -60,13 +59,49 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
         self.presentViewController(newMealNC, animated: true, completion: nil)
     }
     
+    
+    //MARK: Table View Data Souce
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        } else {
+            return group.meals.count
+        }
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("GroupProfCell", forIndexPath: indexPath) as! GroupProfCell
+            cell.fillWith(group)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("MealCell", forIndexPath: indexPath) as! MealCell
+            cell.fillWith(group.meals[indexPath.row])
+            return cell
+        }
+        
+    }
+    
+    private func registerCell() {
+        self.tableView.registerCell("GroupProfCell")
+        self.tableView.registerCell("MealCell")
+    }
+    
+    
+    
     private func setTableView() {
         self.tableView.delegate = self
-        self.tableView.dataSource = viewModel
+        self.tableView.dataSource = self
     }
     
     private func addSubViewBarItems() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .Done, target: self, action: #selector(MealIndexViewController.modalNewMealVC(_:)))
     }
+    
+    
     
 }

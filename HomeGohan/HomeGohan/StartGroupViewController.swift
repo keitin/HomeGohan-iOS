@@ -15,6 +15,8 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "アルバム一覧"
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerCell("StartGroupCell")
@@ -71,6 +73,12 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             return 80
         }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let mealIndexVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealIndexViewController") as! MealIndexViewController
+        mealIndexVC.group = currentUser.groups[indexPath.row]
+        self.navigationController?.pushViewController(mealIndexVC, animated: true)
     }
     
 
