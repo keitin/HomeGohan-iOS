@@ -16,6 +16,8 @@ class User {
     var id: Int!
     var image: UIImage!
     
+    var groups: [Group] = []
+    
     init(json: JSON) {      
         self.id = json["id"].int!
         self.name = json["name"].string!
@@ -58,6 +60,30 @@ class User {
                 }
             }
     }
+    
+    func requestGetGroups(completion: () -> Void) {
+        let params = [
+            "user_id": self.id
+        ]
+        Alamofire.request(.GET, API.baseURL + "/api/groups", parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let value):
+                    self.groups = []
+                    let json = JSON(value)
+                    for groupJSON in json["groups"].array! {
+                        let group = Group(json: groupJSON["group"])
+                        self.groups.append(group)
+                        completion()
+                    }
+                case .Failure(let error):
+                    completion()
+                    print(error)
+                }
+        }
+    }
+    
+    
     
     
     

@@ -42,6 +42,9 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func tapCreateGroupButton(sender: UIButton) {
         print(checkUserIds)
+        Group.requestCreateGroup(checkUserIds) { 
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
 
     //MARK: Table View Delegate

@@ -60,6 +60,8 @@
 		32301F701D8A65E600B08C3F /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F6E1D8A65E600B08C3F /* SearchUserCell.swift */; };
 		32301F711D8A65E600B08C3F /* SearchUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32301F6F1D8A65E600B08C3F /* SearchUserCell.xib */; };
 		32301F731D8A6A5000B08C3F /* SearchUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F721D8A6A5000B08C3F /* SearchUsers.swift */; };
+		32301F771D8A807100B08C3F /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F751D8A807100B08C3F /* GroupCell.swift */; };
+		32301F781D8A807100B08C3F /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32301F761D8A807100B08C3F /* GroupCell.xib */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -143,6 +145,8 @@
 		32301F6E1D8A65E600B08C3F /* SearchUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
 		32301F6F1D8A65E600B08C3F /* SearchUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchUserCell.xib; sourceTree = "<group>"; };
 		32301F721D8A6A5000B08C3F /* SearchUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUsers.swift; sourceTree = "<group>"; };
+		32301F751D8A807100B08C3F /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		32301F761D8A807100B08C3F /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -457,8 +461,8 @@
 			isa = PBXGroup;
 			children = (
 				32301F6D1D8A65C200B08C3F /* StartGroup */,
-				32301F6E1D8A65E600B08C3F /* SearchUserCell.swift */,
-				32301F6F1D8A65E600B08C3F /* SearchUserCell.xib */,
+				32301F741D8A72C700B08C3F /* SearchUser */,
+				32301F791D8A832400B08C3F /* Group */,
 			);
 			name = Group;
 			sourceTree = "<group>";
@@ -470,6 +474,24 @@
 				32301F671D8A618800B08C3F /* StartGroupCell.xib */,
 			);
 			name = StartGroup;
+			sourceTree = "<group>";
+		};
+		32301F741D8A72C700B08C3F /* SearchUser */ = {
+			isa = PBXGroup;
+			children = (
+				32301F6E1D8A65E600B08C3F /* SearchUserCell.swift */,
+				32301F6F1D8A65E600B08C3F /* SearchUserCell.xib */,
+			);
+			name = SearchUser;
+			sourceTree = "<group>";
+		};
+		32301F791D8A832400B08C3F /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				32301F751D8A807100B08C3F /* GroupCell.swift */,
+				32301F761D8A807100B08C3F /* GroupCell.xib */,
+			);
+			name = Group;
 			sourceTree = "<group>";
 		};
 		98A796D8F57F5E799093D501 /* Frameworks */ = {
@@ -608,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32301F5C1D8A3F4200B08C3F /* name.png in Resources */,
+				32301F781D8A807100B08C3F /* GroupCell.xib in Resources */,
 				32301F171D89671600B08C3F /* MealCell.xib in Resources */,
 				32301F4C1D8A38E300B08C3F /* User.storyboard in Resources */,
 				32301F371D899CB600B08C3F /* MealShowCell.xib in Resources */,
@@ -771,6 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32301F771D8A807100B08C3F /* GroupCell.swift in Sources */,
 				32301F511D8A3B8500B08C3F /* ResisterUserViewController.swift in Sources */,
 				32301F161D89671600B08C3F /* MealCell.swift in Sources */,
 				32301F4E1D8A3A9000B08C3F /* StartViewController.swift in Sources */,
