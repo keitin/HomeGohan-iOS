@@ -73,8 +73,8 @@
 		3286C19B1D8AAD9E00857264 /* pro_f.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C18D1D8AAD9E00857264 /* pro_f.png */; };
 		3286C19C1D8AAD9E00857264 /* pro_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C18E1D8AAD9E00857264 /* pro_n.png */; };
 		3286C19D1D8AAD9E00857264 /* hed_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C18F1D8AAD9E00857264 /* hed_arrow.png */; };
-		3286C19E1D8AAD9E00857264 /* hed_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1901D8AAD9E00857264 /* hed_close.png */; };
 		3286C19F1D8AAD9E00857264 /* hed_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1911D8AAD9E00857264 /* hed_menu.png */; };
+		3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1A01D8ACC8500857264 /* hed_close@2x.png */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -171,8 +171,8 @@
 		3286C18D1D8AAD9E00857264 /* pro_f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pro_f.png; sourceTree = "<group>"; };
 		3286C18E1D8AAD9E00857264 /* pro_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pro_n.png; sourceTree = "<group>"; };
 		3286C18F1D8AAD9E00857264 /* hed_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_arrow.png; sourceTree = "<group>"; };
-		3286C1901D8AAD9E00857264 /* hed_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_close.png; sourceTree = "<group>"; };
 		3286C1911D8AAD9E00857264 /* hed_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_menu.png; sourceTree = "<group>"; };
+		3286C1A01D8ACC8500857264 /* hed_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hed_close@2x.png"; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -380,7 +380,7 @@
 				3286C18D1D8AAD9E00857264 /* pro_f.png */,
 				3286C18E1D8AAD9E00857264 /* pro_n.png */,
 				3286C18F1D8AAD9E00857264 /* hed_arrow.png */,
-				3286C1901D8AAD9E00857264 /* hed_close.png */,
+				3286C1A01D8ACC8500857264 /* hed_close@2x.png */,
 				3286C1911D8AAD9E00857264 /* hed_menu.png */,
 				3286C17D1D8AA7A600857264 /* fukidashi.png */,
 				3286C17F1D8AA7EE00857264 /* check_on.png */,
@@ -671,11 +671,11 @@
 				32301F5E1D8A3F4200B08C3F /* pic.png in Resources */,
 				3286C1931D8AAD9E00857264 /* sche_f.png in Resources */,
 				32301EF71D895CC500B08C3F /* Meal.storyboard in Resources */,
-				3286C19E1D8AAD9E00857264 /* hed_close.png in Resources */,
 				3286C1991D8AAD9E00857264 /* time_ff.png in Resources */,
 				32301F5F1D8A3F4200B08C3F /* camera.png in Resources */,
 				32301F621D8A5A8B00B08C3F /* Group.storyboard in Resources */,
 				3286C1921D8AAD9E00857264 /* sche_n.png in Resources */,
+				3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */,
 				32301F5D1D8A3F4200B08C3F /* catch.png in Resources */,
 				3286C1981D8AAD9E00857264 /* time_nn.png in Resources */,
 				32301ED01D89518F00B08C3F /* Assets.xcassets in Resources */,

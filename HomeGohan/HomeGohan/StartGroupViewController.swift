@@ -22,9 +22,11 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
         tableView.registerCell("StartGroupCell")
         tableView.registerCell("GroupCell")
         
-        if currentUser.groups.isEmpty {
-            self.navigationController?.navigationBar.hidden = true
-        }
+        let backButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButtonItem
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(StartGroupViewController.modalNewGroupVC(_:)))
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -40,7 +42,7 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
         // Dispose of any resources that can be recreated.
     }
     
-    func modalNewGroupVC(sender: UIButton) {
+    func modalNewGroupVC(sender: UIBarButtonItem) {
         let newGroupNC = UIStoryboard.viewControllerWith("Group", identifier: "NewGroupNC")
         presentViewController(newGroupNC, animated: true, completion: nil)
     }
@@ -57,7 +59,6 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if currentUser.groups.isEmpty {
             let cell = tableView.dequeueReusableCellWithIdentifier("StartGroupCell", forIndexPath: indexPath) as! StartGroupCell
-            cell.addGroupButton.addTarget(self, action: #selector(StartGroupViewController.modalNewGroupVC(_:)), forControlEvents: .TouchUpInside)
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("GroupCell", forIndexPath: indexPath) as! GroupCell

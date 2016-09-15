@@ -16,6 +16,11 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = group.name + "とのアルバム"
+        
+        let backButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButtonItem
+        
         self.setTableView()
         self.registerCell()
     }
@@ -35,11 +40,7 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     
     //MARK: Table View Delegate
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return 200
-        } else {
-            return 111
-        }
+        return 175
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

@@ -9,7 +9,6 @@
 import UIKit
 
 class StartGroupCell: UITableViewCell {
-    @IBOutlet weak var addGroupButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

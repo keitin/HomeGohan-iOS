@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewGroupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class NewGroupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -24,9 +24,13 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.registerCell("SearchUserCell")
         
+        textField.delegate = self
+        
         searchUsers.requestGetAllUsers("") { 
             self.tableView.reloadData()
         }
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_close"), style: .Done, target: self, action: #selector(NewGroupViewController.closeVC(_:)))
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +39,11 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func tapSearchButton(sender: UIButton) {
+        tableView.userInteractionEnabled = false
         searchUsers.requestGetAllUsers(textField.text!) {
             self.tableView.reloadData()
+            self.tableView.userInteractionEnabled = true
+            self.textField.endEditing(true)
         }
     }
     
@@ -45,6 +52,10 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
         Group.requestCreateGroup(checkUserIds) { 
             self.dismissViewControllerAnimated(true, completion: nil)
         }
+    }
+    
+    func closeVC(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     //MARK: Table View Delegate
@@ -76,5 +87,10 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
         }
         checkUserIds.append(selectUser.id)
         cell.checkBoxImageView.highlighted = true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
     }
 }

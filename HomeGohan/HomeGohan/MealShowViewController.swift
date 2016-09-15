@@ -19,6 +19,8 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "2016.09.16"
+        
         self.registerCell()
         self.setTableView()
 
@@ -31,6 +33,7 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.keyboardWillShow(self, selector: #selector(MealShowViewController.showWillKeyboard(_:)))
         notificationCenter.keyboardWillHide(self, selector: #selector(MealShowViewController.hideWillKeyboard(_:)))
+        
 
     }
 
@@ -48,6 +51,7 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
             self.textField.endEditing(true)
             self.meal.requestGetComments({ 
                 self.tableView.reloadData()
+                self.tableView.scrollToNearestSelectedRowAtScrollPosition(.Bottom, animated: true)
             })
         }
 
@@ -56,9 +60,9 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
     //MAKR: Table View Delegate
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 479
+            return 454
         } else {
-            return 132
+            return 102
         }
     }
     

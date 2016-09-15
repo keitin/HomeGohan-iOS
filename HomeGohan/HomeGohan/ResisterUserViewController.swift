@@ -36,11 +36,17 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
         let gesture = UITapGestureRecognizer(target: self, action: #selector(ResisterUserViewController.tapView(_:)))
         self.view.addGestureRecognizer(gesture)
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_close"), style: .Done, target: self, action: #selector(ResisterUserViewController.closeVC(_:)))
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func closeVC(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 
