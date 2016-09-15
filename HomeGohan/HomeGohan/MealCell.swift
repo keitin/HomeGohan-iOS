@@ -28,11 +28,11 @@ class MealCell: UITableViewCell {
     func fillWith(meal: Meal) {
         self.mealImageView.sd_setImageWithURL(NSURL(string: meal.imageURL!))
         self.nameLabel.text = meal.user.name
-        
-        let style = NSMutableParagraphStyle()
-        style.lineSpacing = 10
-        let attributes = [NSParagraphStyleAttributeName : style]
-        commentTextView.attributedText = NSAttributedString(string: meal.text, attributes: attributes)
+        self.commentTextView.text = meal.text
+//        let style = NSMutableParagraphStyle()
+//        style.lineSpacing = 10
+//        let attributes = [NSParagraphStyleAttributeName : style]
+//        commentTextView.attributedText = NSAttributedString(string: meal.text, attributes: attributes)
     }
     
     private func layoutMealImageView() {

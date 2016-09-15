@@ -12,7 +12,6 @@ class MealNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         UINavigationBar.appearance().barTintColor = UIColor.mainColor()
     }
 

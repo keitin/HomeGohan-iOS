@@ -110,7 +110,7 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
         if let userInfo = notification.userInfo{
             if let keyboard = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue{
                 let keyboardRect = keyboard.CGRectValue()
-                self.footerHeightConst.constant += keyboardRect.height
+                self.footerHeightConst.constant = keyboardRect.height + hooterViewHeight
 //                self.scrollView.frame.size.height = self.scrollView.frame.height - keyboardRect.height
             }
         }

@@ -24,7 +24,7 @@ class GroupCell: UITableViewCell {
     
     func fillWith(group: Group) {
         self.groupImageView.sd_setImageWithURL(NSURL(string: group.imageURL))
-        self.nameLabel.text = group.name
+        self.nameLabel.text = group.name + "とのアルバム"
     }
     
     private func layoutGroupImageView() {

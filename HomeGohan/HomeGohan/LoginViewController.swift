@@ -14,6 +14,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        title = "ログイン"
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_close"), style: .Done, target: self, action: #selector(LoginViewController.closeVC(_:)))
         self.textField.delegate = self
     }

@@ -75,7 +75,7 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
                 self.cameraImageView.hidden = true
                 self.cametaTextImageView.hidden = true
                 self.userImageView.hidden = true
-                self.footerHeightConst.constant += (keyboardRect.height - self.hooterHieght)
+                self.footerHeightConst.constant = keyboardRect.height
             }
         }
     }

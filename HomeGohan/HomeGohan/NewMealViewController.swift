@@ -55,7 +55,7 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
                 self.cameraImageView.hidden = true
                 self.cameraTextImageView.hidden = true
                 self.mealImageView.hidden = true
-                self.footerHeightConst.constant += (keyboardRect.height - self.footerHeight)
+                self.footerHeightConst.constant = keyboardRect.height
             }
         }
     }

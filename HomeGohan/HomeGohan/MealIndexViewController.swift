@@ -40,7 +40,7 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     
     //MARK: Table View Delegate
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 175
+        return 158
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

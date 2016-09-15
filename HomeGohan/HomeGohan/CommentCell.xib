@@ -5,6 +5,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceHanSansJP-Bold.otf">
+            <string>SourceHanSansJP-Bold</string>
+            <string>SourceHanSansJP-Bold</string>
+        </mutableArray>
+        <mutableArray key="SourceHanSansJP-Medium.otf">
+            <string>SourceHanSansJP-Medium</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,7 +36,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="kU0-6K-YvG"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                        <fontDescription key="fontDescription" name="SourceHanSansJP-Bold" family="Source Han Sans JP" pointSize="15"/>
                         <color key="textColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -37,7 +46,7 @@
                             <constraint firstAttribute="height" constant="16" id="MC4-j2-QiY"/>
                             <constraint firstAttribute="width" constant="77" id="qUA-yP-ygm"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="SourceHanSansJP-Bold" family="Source Han Sans JP" pointSize="13"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -52,7 +61,7 @@
                         <rect key="frame" x="94" y="46" width="285" height="42"/>
                         <string key="text">秋らしくて美味しそう
 お母さんも作りたい。</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

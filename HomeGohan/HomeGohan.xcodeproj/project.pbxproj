@@ -76,6 +76,14 @@
 		3286C19F1D8AAD9E00857264 /* hed_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1911D8AAD9E00857264 /* hed_menu.png */; };
 		3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1A01D8ACC8500857264 /* hed_close@2x.png */; };
 		32FF29891D8AF96900836D80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF29881D8AF96900836D80 /* LoginViewController.swift */; };
+		32FF298C1D8B00F600836D80 /* UserNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF298B1D8B00F600836D80 /* UserNavigationController.swift */; };
+		32FF29951D8B5A6300836D80 /* SourceHanSansJP-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF298E1D8B045600836D80 /* SourceHanSansJP-Heavy.otf */; };
+		32FF29961D8B5A6300836D80 /* SourceHanSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF298F1D8B045600836D80 /* SourceHanSansJP-Bold.otf */; };
+		32FF29971D8B5A6300836D80 /* SourceHanSansJP-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29901D8B045600836D80 /* SourceHanSansJP-Medium.otf */; };
+		32FF29981D8B5A6300836D80 /* SourceHanSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29911D8B045600836D80 /* SourceHanSansJP-Regular.otf */; };
+		32FF29991D8B5A6300836D80 /* SourceHanSansJP-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29921D8B045600836D80 /* SourceHanSansJP-Normal.otf */; };
+		32FF299A1D8B5A6300836D80 /* SourceHanSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29931D8B045600836D80 /* SourceHanSansJP-Light.otf */; };
+		32FF299B1D8B5A6300836D80 /* SourceHanSansJP-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29941D8B045600836D80 /* SourceHanSansJP-ExtraLight.otf */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -175,6 +183,14 @@
 		3286C1911D8AAD9E00857264 /* hed_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_menu.png; sourceTree = "<group>"; };
 		3286C1A01D8ACC8500857264 /* hed_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hed_close@2x.png"; sourceTree = "<group>"; };
 		32FF29881D8AF96900836D80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32FF298B1D8B00F600836D80 /* UserNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNavigationController.swift; sourceTree = "<group>"; };
+		32FF298E1D8B045600836D80 /* SourceHanSansJP-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Heavy.otf"; sourceTree = "<group>"; };
+		32FF298F1D8B045600836D80 /* SourceHanSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Bold.otf"; sourceTree = "<group>"; };
+		32FF29901D8B045600836D80 /* SourceHanSansJP-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Medium.otf"; sourceTree = "<group>"; };
+		32FF29911D8B045600836D80 /* SourceHanSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Regular.otf"; sourceTree = "<group>"; };
+		32FF29921D8B045600836D80 /* SourceHanSansJP-Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Normal.otf"; sourceTree = "<group>"; };
+		32FF29931D8B045600836D80 /* SourceHanSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Light.otf"; sourceTree = "<group>"; };
+		32FF29941D8B045600836D80 /* SourceHanSansJP-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-ExtraLight.otf"; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +260,7 @@
 				32301F041D895F5300B08C3F /* Views */,
 				32301EFE1D895EA500B08C3F /* Controllers */,
 				32301EFD1D895E9400B08C3F /* Extension */,
+				32FF298D1D8B042700836D80 /* font */,
 				32301F251D8982FC00B08C3F /* Images */,
 				32301ECF1D89518F00B08C3F /* Assets.xcassets */,
 				32301ED11D89518F00B08C3F /* LaunchScreen.storyboard */,
@@ -459,6 +476,7 @@
 				32301F4D1D8A3A9000B08C3F /* StartViewController.swift */,
 				32301F501D8A3B8500B08C3F /* ResisterUserViewController.swift */,
 				32FF29881D8AF96900836D80 /* LoginViewController.swift */,
+				32FF298B1D8B00F600836D80 /* UserNavigationController.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -518,6 +536,20 @@
 				32301F761D8A807100B08C3F /* GroupCell.xib */,
 			);
 			name = Group;
+			sourceTree = "<group>";
+		};
+		32FF298D1D8B042700836D80 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				32FF298E1D8B045600836D80 /* SourceHanSansJP-Heavy.otf */,
+				32FF298F1D8B045600836D80 /* SourceHanSansJP-Bold.otf */,
+				32FF29901D8B045600836D80 /* SourceHanSansJP-Medium.otf */,
+				32FF29911D8B045600836D80 /* SourceHanSansJP-Regular.otf */,
+				32FF29921D8B045600836D80 /* SourceHanSansJP-Normal.otf */,
+				32FF29931D8B045600836D80 /* SourceHanSansJP-Light.otf */,
+				32FF29941D8B045600836D80 /* SourceHanSansJP-ExtraLight.otf */,
+			);
+			name = font;
 			sourceTree = "<group>";
 		};
 		98A796D8F57F5E799093D501 /* Frameworks */ = {
@@ -655,6 +687,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FF29951D8B5A6300836D80 /* SourceHanSansJP-Heavy.otf in Resources */,
+				32FF29961D8B5A6300836D80 /* SourceHanSansJP-Bold.otf in Resources */,
+				32FF29971D8B5A6300836D80 /* SourceHanSansJP-Medium.otf in Resources */,
+				32FF29981D8B5A6300836D80 /* SourceHanSansJP-Regular.otf in Resources */,
+				32FF29991D8B5A6300836D80 /* SourceHanSansJP-Normal.otf in Resources */,
+				32FF299A1D8B5A6300836D80 /* SourceHanSansJP-Light.otf in Resources */,
+				32FF299B1D8B5A6300836D80 /* SourceHanSansJP-ExtraLight.otf in Resources */,
 				3286C19B1D8AAD9E00857264 /* pro_f.png in Resources */,
 				32301F5C1D8A3F4200B08C3F /* name.png in Resources */,
 				32301F781D8A807100B08C3F /* GroupCell.xib in Resources */,
@@ -845,6 +884,7 @@
 				32301F1E1D897AD200B08C3F /* Meal.swift in Sources */,
 				32301F641D8A5BCD00B08C3F /* StartGroupViewController.swift in Sources */,
 				32301F2D1D89998800B08C3F /* MealShowViewController.swift in Sources */,
+				32FF298C1D8B00F600836D80 /* UserNavigationController.swift in Sources */,
 				32301F681D8A618800B08C3F /* StartGroupCell.swift in Sources */,
 				32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */,
 				32301F1C1D8969BE00B08C3F /* UIColor+Extension.swift in Sources */,

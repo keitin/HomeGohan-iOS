@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="2465.5" y="102.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--User Navigation Controller-->
         <scene sceneID="bNA-xt-XM9">
             <objects>
-                <navigationController storyboardIdentifier="ResisterUserNC" automaticallyAdjustsScrollViewInsets="NO" id="3tn-zI-1Zy" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ResisterUserNC" automaticallyAdjustsScrollViewInsets="NO" id="3tn-zI-1Zy" customClass="UserNavigationController" customModule="HomeGohan" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="uKR-Av-YQF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -233,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="1654" y="103"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--User Navigation Controller-->
         <scene sceneID="yz9-sp-b1I">
             <objects>
-                <navigationController storyboardIdentifier="LoginNC" automaticallyAdjustsScrollViewInsets="NO" id="bKh-Ft-a2q" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNC" automaticallyAdjustsScrollViewInsets="NO" id="bKh-Ft-a2q" customClass="UserNavigationController" customModule="HomeGohan" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="VEf-Xo-zbQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
