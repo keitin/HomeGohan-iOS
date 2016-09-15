@@ -87,7 +87,6 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    
     //MARK: API Request
     func createComment(text: String, completion: () -> Void) {
         let currentUser = CurrentUser.sharedInstance
@@ -95,10 +94,6 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
         comment.requestCreateComment(self.meal) {
             completion()
         }
-    }
-    
-    func getCommentInBackGround() {
-        
     }
     
     func registerCell() {

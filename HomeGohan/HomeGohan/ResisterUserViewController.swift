@@ -15,6 +15,10 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var cameraImageView: UIImageView!
     @IBOutlet weak var cametaTextImageView: UIImageView!
+    @IBOutlet weak var footerHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var resisetButton: UIButton!
+    
+    var hooterHieght: CGFloat!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,16 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
         title = "アカウントを設定"
         self.addGestureToMealImageView()
         self.textView.delegate = self
+        
+        self.hooterHieght = resisetButton.frame.height
+        //Keyboard Notification
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.keyboardWillShow(self, selector: #selector(MealShowViewController.showWillKeyboard(_:)))
+        notificationCenter.keyboardWillHide(self, selector: #selector(MealShowViewController.hideWillKeyboard(_:)))
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ResisterUserViewController.tapView(_:)))
+        self.view.addGestureRecognizer(gesture)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,12 +45,51 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
     
 
     @IBAction func tapResisterButton(sender: UIButton) {
+        
+        if self.textView.text.isEmpty || self.userImageView.image == nil {
+            return
+        }
         let user = User(name: self.textView.text!, image: self.userImageView.image!)
         user.requestCreate { 
             let startGroupNC = UIStoryboard.viewControllerWith("Group", identifier: "StartGroupNC")
             UIApplication.sharedApplication().keyWindow?.rootViewController = startGroupNC
         }
     }
+    
+    func tapView(sender: UITapGestureRecognizer) {
+        textView.endEditing(true)
+    }
+    
+    // MARK Keyboard Notification
+    func showWillKeyboard(notification: NSNotification) {
+        if let userInfo = notification.userInfo{
+            if let keyboard = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue{
+                let keyboardRect = keyboard.CGRectValue()
+                self.placeholderImageView.hidden = true
+                self.cameraImageView.hidden = true
+                self.cametaTextImageView.hidden = true
+                self.userImageView.hidden = true
+                self.footerHeightConst.constant += (keyboardRect.height - self.hooterHieght)
+            }
+        }
+    }
+    
+    func hideWillKeyboard(notification: NSNotification) {
+        UIView.animateWithDuration(2.5, animations: {
+            if self.userImageView.image == nil {
+                self.cameraImageView.hidden = false
+                self.cametaTextImageView.hidden = false
+            }
+            
+            if self.textView.text.isEmpty {
+                self.placeholderImageView.hidden = false
+            }
+            
+            self.userImageView.hidden = false
+            self.footerHeightConst.constant = self.hooterHieght
+        })
+    }
+    
     
     //MARK: Text View Delegate
     func textViewDidBeginEditing(textView: UITextView) {

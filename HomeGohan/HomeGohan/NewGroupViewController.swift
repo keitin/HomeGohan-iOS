@@ -65,11 +65,16 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let selectUser = searchUsers.users[indexPath.row]
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! SearchUserCell
         if checkUserIds.contains(selectUser.id) {
             let index = checkUserIds.indexOf(selectUser.id)
             checkUserIds.removeAtIndex(index!)
+            
+            cell.checkBoxImageView.highlighted = false
+            
             return
         }
         checkUserIds.append(selectUser.id)
+        cell.checkBoxImageView.highlighted = true
     }
 }

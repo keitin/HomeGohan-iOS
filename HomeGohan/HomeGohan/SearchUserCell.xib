@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,23 +15,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="90.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-fZ-8Vi">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-fZ-8Vi">
                         <rect key="frame" x="18" y="21" width="49" height="49"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="fun-OY-uwE"/>
+                            <constraint firstAttribute="height" constant="49" id="mxf-gA-SVi"/>
+                        </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="omoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHx-Hd-WbO">
-                        <rect key="frame" x="293" y="21" width="49" height="49"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_off.png" highlightedImage="check_on.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHx-Hd-WbO">
+                        <rect key="frame" x="297" y="23" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="5CT-Gj-UwJ"/>
+                            <constraint firstAttribute="height" constant="45" id="upH-mq-E50"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhq-k2-WpA">
-                        <rect key="frame" x="75" y="31" width="210" height="29"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhq-k2-WpA">
+                        <rect key="frame" x="79" y="31" width="210" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="ZtO-ua-U80"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="jhq-k2-WpA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="Ada-lA-B3O"/>
+                    <constraint firstItem="jhq-k2-WpA" firstAttribute="leading" secondItem="I9G-fZ-8Vi" secondAttribute="trailing" constant="12" id="aAt-bA-QhX"/>
+                    <constraint firstItem="JHx-Hd-WbO" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="aaW-Rj-fwk"/>
+                    <constraint firstItem="JHx-Hd-WbO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="cwj-Vf-b9T"/>
+                    <constraint firstItem="I9G-fZ-8Vi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="dfq-tB-fkl"/>
+                    <constraint firstItem="I9G-fZ-8Vi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="rPy-v4-lT7"/>
+                    <constraint firstItem="JHx-Hd-WbO" firstAttribute="leading" secondItem="jhq-k2-WpA" secondAttribute="trailing" constant="8" id="zfb-4R-lhf"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="checkboxImageView" destination="JHx-Hd-WbO" id="VmQ-H9-zvu"/>
+                <outlet property="checkBoxImageView" destination="JHx-Hd-WbO" id="hdD-8e-jGk"/>
                 <outlet property="nameLabel" destination="jhq-k2-WpA" id="L3Q-DS-Ty9"/>
                 <outlet property="userImageView" destination="I9G-fZ-8Vi" id="qeZ-ys-eZv"/>
             </connections>
@@ -38,6 +59,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="omoto.png" width="392" height="381"/>
+        <image name="check_off.png" width="114" height="114"/>
+        <image name="check_on.png" width="114" height="114"/>
     </resources>
 </document>

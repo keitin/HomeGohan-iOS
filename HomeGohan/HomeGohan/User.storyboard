@@ -49,19 +49,51 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tx7-RR-6D0">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tx7-RR-6D0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="289"/>
                                 <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="289" id="YZp-N7-vwX"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-RG-zrQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-RG-zrQ">
                                 <rect key="frame" x="16" y="364" width="335" height="103"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="LzH-Uo-rvC"/>
+                                    <constraint firstAttribute="height" constant="103" id="MkM-GN-yfM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-5q-ec1">
-                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jc3-q1-MQp">
+                                <rect key="frame" x="24" y="62" width="326" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="5ih-Gd-18c"/>
+                                    <constraint firstAttribute="width" constant="326" id="tc2-0p-U9A"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-Bh-kgW">
+                                <rect key="frame" x="110" y="111" width="155" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="Agf-2m-tD9"/>
+                                    <constraint firstAttribute="height" constant="96" id="YEN-qn-HMg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name.png" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-K5-kzP">
+                                <rect key="frame" x="92.5" y="349" width="190" height="134"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="54g-GR-PRS"/>
+                                    <constraint firstAttribute="height" constant="134" id="mnM-Xy-Ilw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-5q-ec1">
+                                <rect key="frame" x="0.0" y="548" width="375" height="55"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7ZL-gK-UBR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <state key="normal" title="登録する">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,25 +102,33 @@
                                     <action selector="tapResisterButton:" destination="XzP-pG-x5G" eventType="touchUpInside" id="ihg-lA-JdX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jc3-q1-MQp">
-                                <rect key="frame" x="24" y="62" width="326" height="163"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="ACa-Bh-kgW">
-                                <rect key="frame" x="92" y="99" width="190" height="117"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="name.png" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-K5-kzP">
-                                <rect key="frame" x="23" y="359" width="327" height="114"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ACa-Bh-kgW" firstAttribute="centerX" secondItem="pgk-Zq-f3n" secondAttribute="centerX" id="AeA-4x-bne"/>
+                            <constraint firstItem="yeF-5q-ec1" firstAttribute="top" secondItem="h9y-RG-zrQ" secondAttribute="bottom" constant="81" id="B9e-sh-lYY"/>
+                            <constraint firstItem="pj0-K5-kzP" firstAttribute="centerX" secondItem="pgk-Zq-f3n" secondAttribute="centerX" id="EGp-mn-sq8"/>
+                            <constraint firstItem="yeF-5q-ec1" firstAttribute="leading" secondItem="pgk-Zq-f3n" secondAttribute="leading" id="Kjz-6k-4YM"/>
+                            <constraint firstItem="22V-hA-GUu" firstAttribute="top" secondItem="yeF-5q-ec1" secondAttribute="bottom" id="Mqh-da-QuL"/>
+                            <constraint firstItem="Tx7-RR-6D0" firstAttribute="leading" secondItem="pgk-Zq-f3n" secondAttribute="leading" id="Ol5-o6-FqG"/>
+                            <constraint firstItem="h9y-RG-zrQ" firstAttribute="centerX" secondItem="pgk-Zq-f3n" secondAttribute="centerX" id="QPN-Xr-bwT"/>
+                            <constraint firstAttribute="trailing" secondItem="Tx7-RR-6D0" secondAttribute="trailing" id="SAD-DT-sjB"/>
+                            <constraint firstItem="Jc3-q1-MQp" firstAttribute="centerX" secondItem="pgk-Zq-f3n" secondAttribute="centerX" id="VpL-cu-Jbb"/>
+                            <constraint firstItem="Tx7-RR-6D0" firstAttribute="top" secondItem="Qu5-q1-Z3n" secondAttribute="bottom" id="W9R-v8-CwK"/>
+                            <constraint firstItem="ACa-Bh-kgW" firstAttribute="top" secondItem="Qu5-q1-Z3n" secondAttribute="bottom" constant="111" id="Weq-DJ-Sgw"/>
+                            <constraint firstItem="Jc3-q1-MQp" firstAttribute="top" secondItem="Qu5-q1-Z3n" secondAttribute="bottom" constant="62" id="aFk-B7-Jbc"/>
+                            <constraint firstAttribute="trailing" secondItem="yeF-5q-ec1" secondAttribute="trailing" id="jf2-5O-Wp3"/>
+                            <constraint firstItem="yeF-5q-ec1" firstAttribute="top" secondItem="pj0-K5-kzP" secondAttribute="bottom" constant="65" id="wic-co-522"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GsF-OG-acg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="cameraImageView" destination="Jc3-q1-MQp" id="1TT-5B-Egm"/>
                         <outlet property="cametaTextImageView" destination="ACa-Bh-kgW" id="kpl-Z1-0JZ"/>
+                        <outlet property="footerHeightConst" destination="7ZL-gK-UBR" id="c59-rd-j0R"/>
                         <outlet property="placeholderImageView" destination="pj0-K5-kzP" id="rWt-Fi-68i"/>
+                        <outlet property="resisetButton" destination="yeF-5q-ec1" id="fQK-xB-dya"/>
                         <outlet property="textView" destination="h9y-RG-zrQ" id="wXE-Ri-boC"/>
                         <outlet property="userImageView" destination="Tx7-RR-6D0" id="9dt-yj-Nry"/>
                     </connections>

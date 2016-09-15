@@ -13,7 +13,10 @@ class SearchUserCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var checkboxImageView: UIImageView!
+    @IBOutlet weak var checkBoxImageView: UIImageView!
+    
+
+    var isCheck: Bool = false
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,5 +36,8 @@ class SearchUserCell: UITableViewCell {
         self.userImageView.makeAspectFill()
         self.userImageView.makeCircle()
     }
+    
+    
+    
     
 }
