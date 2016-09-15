@@ -30,7 +30,8 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func modalNewGroupVC(sender: UIButton) {
-        
+        let newGroupNC = UIStoryboard.viewControllerWith("Group", identifier: "NewGroupNC")
+        presentViewController(newGroupNC, animated: true, completion: nil)
     }
     
     //MARK: Table View Data Source

@@ -12,13 +12,21 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    var users: [User] = []
-
+    let searchUsers = SearchUsers.sharedInstance
+    var checkUserIds: [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "大切な人を探そう"
+        
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.registerCell("SearchUserCell")
+        
+        searchUsers.requestGetAllUsers("") { 
+            self.tableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,18 +35,38 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func tapSearchButton(sender: UIButton) {
+        searchUsers.requestGetAllUsers(textField.text!) {
+            self.tableView.reloadData()
+        }
+    }
+    
+    @IBAction func tapCreateGroupButton(sender: UIButton) {
+        print(checkUserIds)
     }
 
     //MARK: Table View Delegate
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return searchUsers.users.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("SearchUserCell", forIndexPath: indexPath) as! SearchUserCell
+        cell.fillWith(searchUsers.users[indexPath.row])
         return cell
     }
     
     //MARK: Table View Datasouce
-
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 91
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let selectUser = searchUsers.users[indexPath.row]
+        if checkUserIds.contains(selectUser.id) {
+            let index = checkUserIds.indexOf(selectUser.id)
+            checkUserIds.removeAtIndex(index!)
+            return
+        }
+        checkUserIds.append(selectUser.id)
+    }
 }

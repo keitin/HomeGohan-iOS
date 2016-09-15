@@ -7,18 +7,31 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SearchUserCell: UITableViewCell {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var checkboxImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.layoutUserImageView()
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func fillWith(user: User) {
+        self.nameLabel.text = user.name
+        self.userImageView.sd_setImageWithURL(NSURL(string: user.imageURL))
+    }
+    
+    private func layoutUserImageView() {
+        self.userImageView.makeAspectFill()
+        self.userImageView.makeCircle()
     }
     
 }

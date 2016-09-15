@@ -75,22 +75,38 @@
                                     <action selector="tapSearchButton:" destination="fZB-QG-7Fg" eventType="touchUpInside" id="Ju6-5q-GBj"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-gN-hJV">
-                                <rect key="frame" x="0.0" y="68" width="375" height="535"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-gN-hJV">
+                                <rect key="frame" x="0.0" y="50" width="375" height="503"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqf-4o-JxT">
+                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7Xo-sJ-f4c"/>
+                                </constraints>
+                                <state key="normal" title="作成する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapCreateGroupButton:" destination="fZB-QG-7Fg" eventType="touchUpInside" id="M7n-9D-vGx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JV7-gN-hJV" firstAttribute="top" secondItem="dlS-PK-YZ3" secondAttribute="bottom" constant="18" id="5k9-po-cmm"/>
+                            <constraint firstAttribute="trailing" secondItem="JV7-gN-hJV" secondAttribute="trailing" id="1I5-Be-KtH"/>
                             <constraint firstItem="dlS-PK-YZ3" firstAttribute="top" secondItem="DjD-y5-C1U" secondAttribute="bottom" constant="20" id="9HE-oJ-pj1"/>
                             <constraint firstItem="sAt-4R-7V5" firstAttribute="leading" secondItem="zh1-gx-Txr" secondAttribute="leadingMargin" id="AIN-Rc-6td"/>
                             <constraint firstItem="dlS-PK-YZ3" firstAttribute="leading" secondItem="sAt-4R-7V5" secondAttribute="trailing" constant="16" id="BUO-vk-6H2"/>
                             <constraint firstItem="dlS-PK-YZ3" firstAttribute="trailing" secondItem="zh1-gx-Txr" secondAttribute="trailingMargin" id="DwP-UQ-l27"/>
-                            <constraint firstAttribute="trailing" secondItem="JV7-gN-hJV" secondAttribute="trailing" id="QJj-eo-a8x"/>
+                            <constraint firstItem="JV7-gN-hJV" firstAttribute="top" secondItem="dlS-PK-YZ3" secondAttribute="bottom" id="JjU-Pk-mw3"/>
+                            <constraint firstItem="lN5-RG-n0v" firstAttribute="top" secondItem="Vqf-4o-JxT" secondAttribute="bottom" id="Lvi-Ho-11L"/>
+                            <constraint firstAttribute="trailing" secondItem="Vqf-4o-JxT" secondAttribute="trailing" id="Rah-IH-sZO"/>
+                            <constraint firstItem="Vqf-4o-JxT" firstAttribute="leading" secondItem="zh1-gx-Txr" secondAttribute="leading" id="aLO-qh-dPO"/>
+                            <constraint firstItem="Vqf-4o-JxT" firstAttribute="top" secondItem="JV7-gN-hJV" secondAttribute="bottom" id="do0-9f-PqD"/>
+                            <constraint firstItem="JV7-gN-hJV" firstAttribute="leading" secondItem="zh1-gx-Txr" secondAttribute="leading" id="kSn-LL-Gl7"/>
                             <constraint firstItem="sAt-4R-7V5" firstAttribute="top" secondItem="DjD-y5-C1U" secondAttribute="bottom" constant="20" id="sZP-LR-Wm7"/>
-                            <constraint firstItem="JV7-gN-hJV" firstAttribute="leading" secondItem="zh1-gx-Txr" secondAttribute="leading" id="vd0-kg-QpF"/>
-                            <constraint firstItem="lN5-RG-n0v" firstAttribute="top" secondItem="JV7-gN-hJV" secondAttribute="bottom" id="zGM-tX-qCL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dWu-zk-W4g"/>
@@ -126,7 +142,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dTX-jf-bLU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EDz-rt-gDB" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NewGroupNC" automaticallyAdjustsScrollViewInsets="NO" id="EDz-rt-gDB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="RWn-sV-hYH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
