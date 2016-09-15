@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let currentUser = CurrentUser.sharedInstance
         currentUser.fetchInLocal()
         
-        let mealsIndexVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealNC")
+        let mealsIndexVC = UIStoryboard.viewControllerWith("User", identifier: "StartViewController")
         self.window?.rootViewController = mealsIndexVC
     
         

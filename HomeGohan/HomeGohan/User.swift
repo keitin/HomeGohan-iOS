@@ -14,11 +14,12 @@ class User {
     var name: String!
     var imageURL: String!
     var id: Int!
+    var image: UIImage!
     
     init(json: JSON) {      
         self.id = json["id"].int!
         self.name = json["name"].string!
-        self.imageURL = json["image_url"].string!
+        self.imageURL = API.baseURL + json["image_url"]["url"].string!
     }
     
     init(id: Int, name: String, imageURL: String) {
@@ -27,5 +28,34 @@ class User {
         self.imageURL = imageURL
     }
     
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.image = image
+    }
+    
     init() {}
+    
+    func requestCreate(completion: () -> Void) {
+        let params: [String: AnyObject] = [
+            "name": self.name,
+        ]
+        let pass = API.baseURL +  "/api/users"
+        let httpMethod = Alamofire.Method.POST.rawValue
+        
+        let urlRequest = NSData.urlRequestWithComponents(httpMethod, urlString: pass, parameters: params, image: self.image!)
+        Alamofire.upload(urlRequest.0, data: urlRequest.1)
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let value):
+                    let json = JSON(value)
+                    let user = User(json: json["currentUser"])
+                    let currentUser = CurrentUser.sharedInstance
+                    currentUser.fetchCurrentUser(user)
+                    completion()
+                case .Failure(let error):
+                    print(error)
+                    completion()
+                }
+            }
+    }
 }

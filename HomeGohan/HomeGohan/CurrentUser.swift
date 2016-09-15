@@ -16,4 +16,10 @@ class CurrentUser: User {
         self.name = "シミズ"
         self.imageURL = "https://nekogazou.com/wp-content/uploads/2015/08/481ba514766f8a3423eaff8d82cc7a64.jpg"
     }
+    
+    func fetchCurrentUser(user: User) {
+        self.id = user.id
+        self.name = user.name
+        self.imageURL = user.imageURL
+    }
 }

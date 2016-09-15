@@ -1,19 +1,19 @@
 //
-//  MealNavigationController.swift
+//  StartViewController.swift
 //  HomeGohan
 //
-//  Created by 松下慶大 on 2016/09/14.
+//  Created by 松下慶大 on 2016/09/15.
 //  Copyright © 2016年 matsushita keita. All rights reserved.
 //
 
 import UIKit
 
-class MealNavigationController: UINavigationController {
+class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        UINavigationBar.appearance().barTintColor = UIColor.mainColor()
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +21,10 @@ class MealNavigationController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tapStartButton(sender: UIButton) {
+        let resisterUserNC = UIStoryboard.viewControllerWith("User", identifier: "ResisterUserNC")
+        self.presentViewController(resisterUserNC, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -33,3 +37,4 @@ class MealNavigationController: UINavigationController {
     */
 
 }
+

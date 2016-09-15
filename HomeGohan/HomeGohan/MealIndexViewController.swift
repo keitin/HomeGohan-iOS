@@ -49,6 +49,7 @@ class MealIndexViewController: UIViewController, UITableViewDelegate {
         let meal = mealManager.meals[indexPath.row]
         let mealShowVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealShowViewController") as! MealShowViewController
         mealShowVC.viewModel.meal = meal
+        
         navigationController?.pushViewController(mealShowVC, animated: true)
     }
     

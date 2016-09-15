@@ -11,12 +11,15 @@ import Alamofire
 import SwiftyJSON
 
 struct Meal {
+    var id: Int!
     var imageURL: String?
     var text: String
     var user: User!
     var image: UIImage?
+    var comments: [Comment] = []
 
     init(json: JSON) {
+        self.id = json["meal"]["id"].int!
         self.imageURL = API.baseURL + json["meal"]["image_url"]["url"].string!
         self.text = json["meal"]["text"].string!
         self.user = User(json: json["user"])
