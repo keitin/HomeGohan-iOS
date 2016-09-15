@@ -26,6 +26,10 @@ class StartViewController: UIViewController {
         self.presentViewController(resisterUserNC, animated: true, completion: nil)
     }
 
+    @IBAction func tapModelLoginButton(sender: UIButton) {
+        let resisterUserNC = UIStoryboard.viewControllerWith("User", identifier: "LoginNC")
+        self.presentViewController(resisterUserNC, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -75,6 +75,7 @@
 		3286C19D1D8AAD9E00857264 /* hed_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C18F1D8AAD9E00857264 /* hed_arrow.png */; };
 		3286C19F1D8AAD9E00857264 /* hed_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1911D8AAD9E00857264 /* hed_menu.png */; };
 		3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1A01D8ACC8500857264 /* hed_close@2x.png */; };
+		32FF29891D8AF96900836D80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF29881D8AF96900836D80 /* LoginViewController.swift */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -173,6 +174,7 @@
 		3286C18F1D8AAD9E00857264 /* hed_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_arrow.png; sourceTree = "<group>"; };
 		3286C1911D8AAD9E00857264 /* hed_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_menu.png; sourceTree = "<group>"; };
 		3286C1A01D8ACC8500857264 /* hed_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hed_close@2x.png"; sourceTree = "<group>"; };
+		32FF29881D8AF96900836D80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 			children = (
 				32301F4D1D8A3A9000B08C3F /* StartViewController.swift */,
 				32301F501D8A3B8500B08C3F /* ResisterUserViewController.swift */,
+				32FF29881D8AF96900836D80 /* LoginViewController.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -846,6 +849,7 @@
 				32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */,
 				32301F1C1D8969BE00B08C3F /* UIColor+Extension.swift in Sources */,
 				32301F361D899CB600B08C3F /* MealShowCell.swift in Sources */,
+				32FF29891D8AF96900836D80 /* LoginViewController.swift in Sources */,
 				32301F6C1D8A64FB00B08C3F /* NewGroupViewController.swift in Sources */,
 				32301F2B1D89893600B08C3F /* NSData+Extension.swift in Sources */,
 				32301F3F1D8A2A3600B08C3F /* Comment.swift in Sources */,

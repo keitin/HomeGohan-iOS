@@ -77,6 +77,9 @@ class StartGroupViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if currentUser.groups.isEmpty {
+            return
+        }
         let mealIndexVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealIndexViewController") as! MealIndexViewController
         mealIndexVC.group = currentUser.groups[indexPath.row]
         self.navigationController?.pushViewController(mealIndexVC, animated: true)

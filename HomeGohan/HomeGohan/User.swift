@@ -83,6 +83,31 @@ class User {
         }
     }
     
+    class func requestLogin(name: String, completion: (message: String?) -> Void) {
+        let params = [
+            "name": name
+        ]
+        Alamofire.request(.POST, API.baseURL + "/api/users/session", parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let value):
+                    let json = JSON(value)
+                    if json["user"] == nil {
+                        completion(message: "登録されていません")
+                        return
+                    }
+                    print(json)
+                    let user = User(json: json["user"])
+                    let currentUser = CurrentUser.sharedInstance
+                    currentUser.fetchCurrentUser(user)
+                    completion(message: nil)
+                case .Failure(let error):
+                    completion(message: "")
+                    print(error)
+                }
+        }
+    }
+    
     
     
     

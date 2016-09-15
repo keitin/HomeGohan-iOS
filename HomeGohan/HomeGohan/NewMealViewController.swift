@@ -77,10 +77,12 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
     }
     
     @IBAction func tapSendButton(sender: UIButton) {
-        let user = CurrentUser.sharedInstance
-        let meal = Meal(image: self.mealImageView.image!, text: self.textView.text, user: user)
-        meal.requestCreate(self.group!) {
-            self.dismissViewControllerAnimated(true, completion: nil)
+        if let image = self.mealImageView.image {
+            let user = CurrentUser.sharedInstance
+            let meal = Meal(image: image, text: self.textView.text, user: user)
+            meal.requestCreate(self.group!) {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
         }
     }
     
