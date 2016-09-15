@@ -45,7 +45,7 @@
                 <outlet property="nameLabel" destination="SK3-yo-LwY" id="0O6-Ga-r4e"/>
                 <outlet property="profileImageView" destination="gmX-vt-83V" id="5Yo-af-D6v"/>
             </connections>
-            <point key="canvasLocation" x="279" y="247.5"/>
+            <point key="canvasLocation" x="279" y="247"/>
         </tableViewCell>
     </objects>
 </document>

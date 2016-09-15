@@ -8,22 +8,25 @@
 
 import UIKit
 
-class MealShowViewController: UIViewController, UITableViewDelegate {
+class MealShowViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var footerHeightConst: NSLayoutConstraint!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var footView: UIView!
     var hooterViewHeight: CGFloat!
-    
+    var meal: Meal!
     @IBOutlet weak var tableView: UITableView!
-    let viewModel = MealShowViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.registerCell()
         self.setTableView()
-        self.viewModel.registerCell(tableView)
+
+        self.meal.requestGetComments({
+            self.tableView.reloadData()
+        })
         
         self.hooterViewHeight = self.footView.frame.height
-        
         //Keyboard Notification
         let notificationCenter = NSNotificationCenter.defaultCenter()
         notificationCenter.keyboardWillShow(self, selector: #selector(MealShowViewController.showWillKeyboard(_:)))
@@ -40,13 +43,14 @@ class MealShowViewController: UIViewController, UITableViewDelegate {
         if self.textField.text!.isEmpty {
             return
         }
-        
-        viewModel.createComment(self.textField.text!) {
+        self.createComment(self.textField.text!) {
             self.textField.text = ""
             self.textField.endEditing(true)
+            self.meal.requestGetComments({ 
+                self.tableView.reloadData()
+            })
         }
-        
-        
+
     }
     
     //MAKR: Table View Delegate
@@ -56,9 +60,52 @@ class MealShowViewController: UIViewController, UITableViewDelegate {
         } else {
             return 132
         }
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        } else {
+            return meal.comments.count
+        }
         
     }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("MealShowCell", forIndexPath: indexPath) as! MealShowCell
+            cell.fillWith(meal)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("CommentCell", forIndexPath: indexPath) as! CommentCell
+            cell.fillWith(meal.comments[indexPath.row])
+            return cell
+        }
+    }
+    
+    
+    //MARK: API Request
+    func createComment(text: String, completion: () -> Void) {
+        let currentUser = CurrentUser.sharedInstance
+        let comment = Comment(text: text, user: currentUser)
+        comment.requestCreateComment(self.meal) {
+            completion()
+        }
+    }
+    
+    func getCommentInBackGround() {
+        
+    }
+    
+    func registerCell() {
+        tableView.registerCell("MealShowCell")
+        tableView.registerCell("CommentCell")
+    }
+
     // MARK Keyboard Notification
     func showWillKeyboard(notification: NSNotification) {
         if let userInfo = notification.userInfo{
@@ -78,8 +125,7 @@ class MealShowViewController: UIViewController, UITableViewDelegate {
     
     private func setTableView() {
         self.tableView.delegate = self
-        self.tableView.dataSource = viewModel
+        self.tableView.dataSource = self
     }
-    
 
 }

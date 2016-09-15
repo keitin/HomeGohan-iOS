@@ -43,12 +43,9 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 {
-            return
-        }
         let meal = group.meals[indexPath.row]
         let mealShowVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealShowViewController") as! MealShowViewController
-        mealShowVC.viewModel.meal = meal
+        mealShowVC.meal = meal
         navigationController?.pushViewController(mealShowVC, animated: true)
     }
     
@@ -62,32 +59,20 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     
     //MARK: Table View Data Souce
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        } else {
-            return group.meals.count
-        }
+        return group.meals.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("GroupProfCell", forIndexPath: indexPath) as! GroupProfCell
-            cell.fillWith(group)
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("MealCell", forIndexPath: indexPath) as! MealCell
-            cell.fillWith(group.meals[indexPath.row])
-            return cell
-        }
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("MealCell", forIndexPath: indexPath) as! MealCell
+        cell.fillWith(group.meals[indexPath.row])
+        return cell
     }
     
     private func registerCell() {
-        self.tableView.registerCell("GroupProfCell")
         self.tableView.registerCell("MealCell")
     }
     

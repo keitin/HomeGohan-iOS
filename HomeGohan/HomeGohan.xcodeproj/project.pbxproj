@@ -35,14 +35,12 @@
 		32301F2B1D89893600B08C3F /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F2A1D89893600B08C3F /* NSData+Extension.swift */; };
 		32301F2D1D89998800B08C3F /* MealShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F2C1D89998800B08C3F /* MealShowViewController.swift */; };
 		32301F2F1D8999F400B08C3F /* MealNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F2E1D8999F400B08C3F /* MealNavigationController.swift */; };
-		32301F311D899B7300B08C3F /* MealShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F301D899B7300B08C3F /* MealShowViewModel.swift */; };
 		32301F361D899CB600B08C3F /* MealShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F341D899CB600B08C3F /* MealShowCell.swift */; };
 		32301F371D899CB600B08C3F /* MealShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32301F351D899CB600B08C3F /* MealShowCell.xib */; };
 		32301F3D1D8A28A800B08C3F /* NSNotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F3C1D8A28A800B08C3F /* NSNotificationCenter+Extension.swift */; };
 		32301F3F1D8A2A3600B08C3F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F3E1D8A2A3600B08C3F /* Comment.swift */; };
 		32301F421D8A2DD600B08C3F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F401D8A2DD600B08C3F /* CommentCell.swift */; };
 		32301F431D8A2DD600B08C3F /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32301F411D8A2DD600B08C3F /* CommentCell.xib */; };
-		32301F4A1D8A373C00B08C3F /* CommentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F491D8A373C00B08C3F /* CommentManager.swift */; };
 		32301F4C1D8A38E300B08C3F /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32301F4B1D8A38E300B08C3F /* User.storyboard */; };
 		32301F4E1D8A3A9000B08C3F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F4D1D8A3A9000B08C3F /* StartViewController.swift */; };
 		32301F511D8A3B8500B08C3F /* ResisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32301F501D8A3B8500B08C3F /* ResisterUserViewController.swift */; };
@@ -118,14 +116,12 @@
 		32301F2A1D89893600B08C3F /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
 		32301F2C1D89998800B08C3F /* MealShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealShowViewController.swift; sourceTree = "<group>"; };
 		32301F2E1D8999F400B08C3F /* MealNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealNavigationController.swift; sourceTree = "<group>"; };
-		32301F301D899B7300B08C3F /* MealShowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealShowViewModel.swift; sourceTree = "<group>"; };
 		32301F341D899CB600B08C3F /* MealShowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealShowCell.swift; sourceTree = "<group>"; };
 		32301F351D899CB600B08C3F /* MealShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealShowCell.xib; sourceTree = "<group>"; };
 		32301F3C1D8A28A800B08C3F /* NSNotificationCenter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 		32301F3E1D8A2A3600B08C3F /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		32301F401D8A2DD600B08C3F /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		32301F411D8A2DD600B08C3F /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
-		32301F491D8A373C00B08C3F /* CommentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentManager.swift; sourceTree = "<group>"; };
 		32301F4B1D8A38E300B08C3F /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
 		32301F4D1D8A3A9000B08C3F /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		32301F501D8A3B8500B08C3F /* ResisterUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResisterUserViewController.swift; sourceTree = "<group>"; };
@@ -210,7 +206,6 @@
 				32301EF81D895CC900B08C3F /* Stroryboards */,
 				32301F121D89642E00B08C3F /* Models */,
 				32301F041D895F5300B08C3F /* Views */,
-				32301F0C1D89621D00B08C3F /* ViewModels */,
 				32301EFE1D895EA500B08C3F /* Controllers */,
 				32301EFD1D895E9400B08C3F /* Extension */,
 				32301F251D8982FC00B08C3F /* Images */,
@@ -302,22 +297,6 @@
 				32301F131D8966DA00B08C3F /* GroupProf */,
 				32301F181D89671A00B08C3F /* MealCell */,
 				32301F381D899CBA00B08C3F /* MealShow */,
-			);
-			name = Meals;
-			sourceTree = "<group>";
-		};
-		32301F0C1D89621D00B08C3F /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				32301F0D1D89629F00B08C3F /* Meals */,
-			);
-			name = ViewModels;
-			sourceTree = "<group>";
-		};
-		32301F0D1D89629F00B08C3F /* Meals */ = {
-			isa = PBXGroup;
-			children = (
-				32301F301D899B7300B08C3F /* MealShowViewModel.swift */,
 			);
 			name = Meals;
 			sourceTree = "<group>";
@@ -417,7 +396,6 @@
 			isa = PBXGroup;
 			children = (
 				32301F3E1D8A2A3600B08C3F /* Comment.swift */,
-				32301F491D8A373C00B08C3F /* CommentManager.swift */,
 			);
 			name = Comment;
 			sourceTree = "<group>";
@@ -799,7 +777,6 @@
 				32301F681D8A618800B08C3F /* StartGroupCell.swift in Sources */,
 				32301F091D89606F00B08C3F /* UIImageView+Extension.swift in Sources */,
 				32301F1C1D8969BE00B08C3F /* UIColor+Extension.swift in Sources */,
-				32301F311D899B7300B08C3F /* MealShowViewModel.swift in Sources */,
 				32301F361D899CB600B08C3F /* MealShowCell.swift in Sources */,
 				32301F6C1D8A64FB00B08C3F /* NewGroupViewController.swift in Sources */,
 				32301F2B1D89893600B08C3F /* NSData+Extension.swift in Sources */,
@@ -813,7 +790,6 @@
 				32301F2F1D8999F400B08C3F /* MealNavigationController.swift in Sources */,
 				32301F021D895F4F00B08C3F /* GroupProfCell.swift in Sources */,
 				32301F701D8A65E600B08C3F /* SearchUserCell.swift in Sources */,
-				32301F4A1D8A373C00B08C3F /* CommentManager.swift in Sources */,
 				32301F3D1D8A28A800B08C3F /* NSNotificationCenter+Extension.swift in Sources */,
 				32301F071D89602000B08C3F /* UIView+Extension.swift in Sources */,
 				32301EFA1D895CF500B08C3F /* UIStoryboard+Extension.swift in Sources */,
@@ -912,7 +888,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -951,7 +927,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -964,6 +940,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomeGohan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinoponchan.HomeGohan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -976,6 +953,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HomeGohan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinoponchan.HomeGohan;
 				PRODUCT_NAME = "$(TARGET_NAME)";

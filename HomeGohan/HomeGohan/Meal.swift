@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-struct Meal {
+class Meal {
     var id: Int!
     var imageURL: String?
     var text: String
@@ -59,4 +59,28 @@ struct Meal {
                 }
         }
     }
+    
+    func requestGetComments(completion: () -> Void) {
+        let params: [String: AnyObject] = [
+            "meal_id": self.id
+        ]
+        Alamofire.request(.GET, API.baseURL + "/api/comments", parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success(let value):
+                    self.comments = []
+                    let json = JSON(value)
+                    for commentJSON in json["comments"].array! {
+                        let comment = Comment(json: commentJSON)
+                        self.comments.append(comment)
+                    }
+                    completion()
+                case .Failure(let error):
+                    completion()
+                    print(error)
+                }
+        }
+    }
+    
+    
 }

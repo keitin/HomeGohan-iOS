@@ -26,22 +26,10 @@ class CommentCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func fillWith() {
-        self.nameLabel.text = "シミズ"
-        self.commentLabel.text = "すごいねええええ！！頑張ったね！"
-        self.userImageView.sd_setImageWithURL(NSURL(string: "http://kuroshiba.net/monaka/wp-content/uploads/2015/08/31981ce00b89e3c6e6b19954a8c13b86_s.jpg"))
-        //        self.nameLabel.text = comment.user.name
-        //        self.commentLabel.text = comment.text
-        //        self.userImageView.sd_setImageWithURL(NSURL(string: comment.user.imageURL))
-    }
-    
     func fillWith(comment: Comment) {
-        self.nameLabel.text = "シミズ"
-        self.commentLabel.text = "すごいねええええ！！頑張ったね！"
-        self.userImageView.sd_setImageWithURL(NSURL(string: "http://kuroshiba.net/monaka/wp-content/uploads/2015/08/31981ce00b89e3c6e6b19954a8c13b86_s.jpg"))
-//        self.nameLabel.text = comment.user.name
-//        self.commentLabel.text = comment.text
-//        self.userImageView.sd_setImageWithURL(NSURL(string: comment.user.imageURL))
+        self.nameLabel.text = comment.user.name
+        self.commentLabel.text = comment.text
+        self.userImageView.sd_setImageWithURL(NSURL(string: comment.user.imageURL))
     }
     
     private func layoutUserImageView() {

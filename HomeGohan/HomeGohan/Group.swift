@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-struct Group {
+class Group {
     var id: Int
     var name: String
     var imageURL: String
@@ -28,7 +28,7 @@ struct Group {
         self.imageURL = API.baseURL + json["image_url"].string!
     }
     
-    static func requestCreateGroup(userIds: [Int], completion: () -> Void) {
+    class func requestCreateGroup(userIds: [Int], completion: () -> Void) {
         let currentUser = CurrentUser.sharedInstance
         let params: [String: AnyObject] = [
             "user_ids": userIds,
@@ -50,7 +50,7 @@ struct Group {
         }
     }
     
-    mutating func requestGetMeals(completion: () -> Void) {
+    func requestGetMeals(completion: () -> Void) {
         let params = [
             "group_id": self.id
         ]
