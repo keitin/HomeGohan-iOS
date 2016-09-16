@@ -75,6 +75,10 @@
 		3286C19D1D8AAD9E00857264 /* hed_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C18F1D8AAD9E00857264 /* hed_arrow.png */; };
 		3286C19F1D8AAD9E00857264 /* hed_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1911D8AAD9E00857264 /* hed_menu.png */; };
 		3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3286C1A01D8ACC8500857264 /* hed_close@2x.png */; };
+		32A540341D8BC1C600142EB6 /* NoUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A540321D8BC1C600142EB6 /* NoUserCell.swift */; };
+		32A540351D8BC1C600142EB6 /* NoUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A540331D8BC1C600142EB6 /* NoUserCell.xib */; };
+		32A540381D8BC1F600142EB6 /* searchbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A540371D8BC1F600142EB6 /* searchbox.png */; };
+		32A5403A1D8BC48400142EB6 /* splash_f-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 32A540391D8BC48400142EB6 /* splash_f-08.png */; };
 		32FF29891D8AF96900836D80 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF29881D8AF96900836D80 /* LoginViewController.swift */; };
 		32FF298C1D8B00F600836D80 /* UserNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF298B1D8B00F600836D80 /* UserNavigationController.swift */; };
 		32FF29951D8B5A6300836D80 /* SourceHanSansJP-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF298E1D8B045600836D80 /* SourceHanSansJP-Heavy.otf */; };
@@ -193,6 +197,10 @@
 		3286C18F1D8AAD9E00857264 /* hed_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_arrow.png; sourceTree = "<group>"; };
 		3286C1911D8AAD9E00857264 /* hed_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hed_menu.png; sourceTree = "<group>"; };
 		3286C1A01D8ACC8500857264 /* hed_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hed_close@2x.png"; sourceTree = "<group>"; };
+		32A540321D8BC1C600142EB6 /* NoUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoUserCell.swift; sourceTree = "<group>"; };
+		32A540331D8BC1C600142EB6 /* NoUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoUserCell.xib; sourceTree = "<group>"; };
+		32A540371D8BC1F600142EB6 /* searchbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchbox.png; sourceTree = "<group>"; };
+		32A540391D8BC48400142EB6 /* splash_f-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash_f-08.png"; sourceTree = "<group>"; };
 		32FF29881D8AF96900836D80 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		32FF298B1D8B00F600836D80 /* UserNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNavigationController.swift; sourceTree = "<group>"; };
 		32FF298E1D8B045600836D80 /* SourceHanSansJP-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Heavy.otf"; sourceTree = "<group>"; };
@@ -410,6 +418,7 @@
 		32301F251D8982FC00B08C3F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				32A540371D8BC1F600142EB6 /* searchbox.png */,
 				3286C1841D8AAD9E00857264 /* sche_n.png */,
 				3286C1851D8AAD9E00857264 /* sche_f.png */,
 				32FF29B31D8B94F900836D80 /* hed_camera_navi@2x.png */,
@@ -435,6 +444,7 @@
 				32FF29A01D8B758B00836D80 /* icon.png */,
 				3286C17F1D8AA7EE00857264 /* check_on.png */,
 				3286C1801D8AA7EE00857264 /* check_off.png */,
+				32A540391D8BC48400142EB6 /* splash_f-08.png */,
 				32FF29B51D8B975600836D80 /* okaeri.png */,
 				32301F601D8A412F00B08C3F /* Login */,
 				32301F231D8982F900B08C3F /* omoto.png */,
@@ -539,6 +549,7 @@
 				32301F6D1D8A65C200B08C3F /* StartGroup */,
 				32301F741D8A72C700B08C3F /* SearchUser */,
 				32301F791D8A832400B08C3F /* Group */,
+				32A540361D8BC1CB00142EB6 /* NoUserCell */,
 			);
 			name = Group;
 			sourceTree = "<group>";
@@ -568,6 +579,15 @@
 				32301F761D8A807100B08C3F /* GroupCell.xib */,
 			);
 			name = Group;
+			sourceTree = "<group>";
+		};
+		32A540361D8BC1CB00142EB6 /* NoUserCell */ = {
+			isa = PBXGroup;
+			children = (
+				32A540321D8BC1C600142EB6 /* NoUserCell.swift */,
+				32A540331D8BC1C600142EB6 /* NoUserCell.xib */,
+			);
+			name = NoUserCell;
 			sourceTree = "<group>";
 		};
 		32FF298D1D8B042700836D80 /* font */ = {
@@ -733,6 +753,7 @@
 				32FF29A51D8B758B00836D80 /* icon.png in Resources */,
 				32FF29971D8B5A6300836D80 /* SourceHanSansJP-Medium.otf in Resources */,
 				32FF29981D8B5A6300836D80 /* SourceHanSansJP-Regular.otf in Resources */,
+				32A540351D8BC1C600142EB6 /* NoUserCell.xib in Resources */,
 				32FF29991D8B5A6300836D80 /* SourceHanSansJP-Normal.otf in Resources */,
 				32FF29B41D8B94F900836D80 /* hed_camera_navi@2x.png in Resources */,
 				32FF299A1D8B5A6300836D80 /* SourceHanSansJP-Light.otf in Resources */,
@@ -772,6 +793,7 @@
 				32301F431D8A2DD600B08C3F /* CommentCell.xib in Resources */,
 				3286C19C1D8AAD9E00857264 /* pro_n.png in Resources */,
 				32301F031D895F4F00B08C3F /* GroupProfCell.xib in Resources */,
+				32A540381D8BC1F600142EB6 /* searchbox.png in Resources */,
 				32FF29AD1D8B832700836D80 /* NoMealCell.xib in Resources */,
 				3286C19D1D8AAD9E00857264 /* hed_arrow.png in Resources */,
 				32301F691D8A618800B08C3F /* StartGroupCell.xib in Resources */,
@@ -780,6 +802,7 @@
 				3286C1821D8AA7EE00857264 /* check_off.png in Resources */,
 				32301ECE1D89518F00B08C3F /* Main.storyboard in Resources */,
 				3286C17E1D8AA7A600857264 /* fukidashi.png in Resources */,
+				32A5403A1D8BC48400142EB6 /* splash_f-08.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -959,6 +982,7 @@
 				32301EFA1D895CF500B08C3F /* UIStoryboard+Extension.swift in Sources */,
 				32301F0F1D89634500B08C3F /* UITableView+Extension.swift in Sources */,
 				32301F271D8985F300B08C3F /* CurrentUser.swift in Sources */,
+				32A540341D8BC1C600142EB6 /* NoUserCell.swift in Sources */,
 				32301F291D89886E00B08C3F /* API.swift in Sources */,
 				32301F1A1D8968BE00B08C3F /* UIFont+Extension.swift in Sources */,
 			);

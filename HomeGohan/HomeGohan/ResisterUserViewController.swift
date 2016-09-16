@@ -118,6 +118,7 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
     func tapUserImageView(sender: UIGestureRecognizer) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
             let album = UIImagePickerController()
+            album.navigationBar.barTintColor = UIColor.mainColor()
             album.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             album.delegate = self
             self.presentViewController(album, animated: true, completion: nil)

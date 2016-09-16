@@ -78,13 +78,6 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name.png" translatesAutoresizingMaskIntoConstraints="NO" id="HCe-Wi-xW8">
-                                <rect key="frame" x="115" y="349" width="145" height="132"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="N04-Ra-T9G"/>
-                                    <constraint firstAttribute="height" constant="132" id="sbP-dQ-KIt"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-as-Xtc">
                                 <rect key="frame" x="0.0" y="548" width="375" height="55"/>
                                 <color key="backgroundColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,6 +104,13 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="164" id="710-W7-M6t"/>
                                     <constraint firstAttribute="height" constant="88" id="y26-WZ-4xb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="HCe-Wi-xW8">
+                                <rect key="frame" x="102" y="349" width="170" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="N04-Ra-T9G"/>
+                                    <constraint firstAttribute="height" constant="150" id="sbP-dQ-KIt"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -250,7 +250,7 @@
     </scenes>
     <resources>
         <image name="camera.png" width="333" height="275"/>
-        <image name="name.png" width="307" height="281"/>
+        <image name="comment.png" width="634" height="688"/>
         <image name="pic.png" width="306" height="169"/>
     </resources>
 </document>

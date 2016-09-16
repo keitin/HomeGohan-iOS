@@ -23,12 +23,11 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerCell("SearchUserCell")
+        tableView.registerCell("NoUserCell")
         
         textField.delegate = self
         
-        searchUsers.requestGetAllUsers("") { 
-            self.tableView.reloadData()
-        }
+        searchUsers.users = []
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_close"), style: .Done, target: self, action: #selector(NewGroupViewController.closeVC(_:)))
         
@@ -78,21 +77,43 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
 
     //MARK: Table View Delegate
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchUsers.users.count
+        if searchUsers.users.isEmpty {
+            return 1
+        } else {
+            return searchUsers.users.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SearchUserCell", forIndexPath: indexPath) as! SearchUserCell
-        cell.fillWith(searchUsers.users[indexPath.row])
-        return cell
+        if searchUsers.users.isEmpty {
+            let cell = tableView.dequeueReusableCellWithIdentifier("NoUserCell", forIndexPath: indexPath) as! NoUserCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchUserCell", forIndexPath: indexPath) as! SearchUserCell
+            let user = searchUsers.users[indexPath.row]
+            if checkUserIds.contains(user.id) {
+                cell.checkBoxImageView.highlighted = true
+            }
+            cell.fillWith(user)
+            return cell
+        }
     }
     
     //MARK: Table View Datasouce
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 91
+        if searchUsers.users.isEmpty {
+            return 178
+        } else {
+            return 91
+        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if searchUsers.users.isEmpty {
+            return
+        }
+        
         let selectUser = searchUsers.users[indexPath.row]
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! SearchUserCell
         if checkUserIds.contains(selectUser.id) {

@@ -57,38 +57,33 @@
                             <constraint firstAttribute="height" constant="3" id="nop-uD-6Oh"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99f-CP-dH7">
-                        <rect key="frame" x="13" y="80" width="224" height="73"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="73" id="zd4-el-71L"/>
-                        </constraints>
-                        <string key="text">お母さん！
-みてみてこれ！すごくない！？
-褒めて褒めて〜＾＾</string>
-                        <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bl0-iR-R9p">
+                        <rect key="frame" x="10" y="70" width="227" height="77.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="99f-CP-dH7" firstAttribute="top" secondItem="kIS-vN-3cB" secondAttribute="bottom" constant="11" id="3Bd-vs-5I8"/>
                     <constraint firstItem="BnC-z2-j9z" firstAttribute="top" secondItem="30g-cS-J9j" secondAttribute="bottom" constant="5" id="70j-Hv-zP1"/>
                     <constraint firstItem="BnC-z2-j9z" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ba0-Sa-gKl"/>
-                    <constraint firstItem="99f-CP-dH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="ECa-me-bFq"/>
+                    <constraint firstItem="bl0-iR-R9p" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="CX3-e9-ziF"/>
                     <constraint firstItem="30g-cS-J9j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="I6K-Y8-EAP"/>
                     <constraint firstItem="kIS-vN-3cB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="L5x-Hc-Nh4"/>
+                    <constraint firstItem="bl0-iR-R9p" firstAttribute="top" secondItem="kIS-vN-3cB" secondAttribute="bottom" constant="1" id="NMX-PZ-rpi"/>
                     <constraint firstItem="ouh-ma-jr1" firstAttribute="leading" secondItem="kIS-vN-3cB" secondAttribute="trailing" constant="8" id="Pij-0Z-WJB"/>
+                    <constraint firstItem="ouh-ma-jr1" firstAttribute="leading" secondItem="bl0-iR-R9p" secondAttribute="trailing" constant="8" id="UXT-0A-d5g"/>
                     <constraint firstItem="ouh-ma-jr1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ugr-ds-z2o"/>
                     <constraint firstAttribute="trailingMargin" secondItem="30g-cS-J9j" secondAttribute="trailing" id="Ukb-Rs-z4W"/>
                     <constraint firstItem="30g-cS-J9j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="W73-yo-h1y"/>
-                    <constraint firstItem="ouh-ma-jr1" firstAttribute="leading" secondItem="99f-CP-dH7" secondAttribute="trailing" constant="8" id="bb4-9d-3xm"/>
+                    <constraint firstItem="bl0-iR-R9p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="ZYB-vx-dVD"/>
                     <constraint firstItem="kIS-vN-3cB" firstAttribute="top" secondItem="BnC-z2-j9z" secondAttribute="bottom" constant="11" id="myZ-zp-aqu"/>
                     <constraint firstItem="BnC-z2-j9z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="p6N-VD-8qX"/>
                     <constraint firstItem="ouh-ma-jr1" firstAttribute="top" secondItem="BnC-z2-j9z" secondAttribute="bottom" constant="13" id="wBD-Og-m4l"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="commentLabel" destination="99f-CP-dH7" id="WXe-eH-SSh"/>
+                <outlet property="commentLabel" destination="bl0-iR-R9p" id="Xjz-Rw-cwQ"/>
                 <outlet property="mealImageView" destination="ouh-ma-jr1" id="7cc-k0-utZ"/>
                 <outlet property="nameLabel" destination="kIS-vN-3cB" id="fhH-jr-R0L"/>
             </connections>

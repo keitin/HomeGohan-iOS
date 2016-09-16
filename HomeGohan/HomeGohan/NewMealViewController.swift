@@ -90,9 +90,11 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
     
     @IBAction func tapSendButton(sender: UIButton) {
         if let image = self.mealImageView.image {
+            sender.enabled = false
             let user = CurrentUser.sharedInstance
             let meal = Meal(image: image, text: self.textView.text, user: user)
             meal.requestCreate(self.group!) {
+                sender.enabled = true
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
         }
@@ -107,15 +109,29 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
     }
     
     func tapMealImageView(sender: UITapGestureRecognizer) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
-            let album = UIImagePickerController()
-            album.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-            //TODO:
-//            album.sourceType = UIImagePickerControllerSourceType.Camera
-//            album.allowsEditing = true
-            album.delegate = self
-            self.presentViewController(album, animated: true, completion: nil)
-        }
+        let album = UIImagePickerController()
+        let sheet = UIAlertController(title: "写真をアップロード", message: nil, preferredStyle: .ActionSheet)
+        sheet.addAction(UIAlertAction(title: "キャンセル", style: .Cancel, handler: nil))
+        sheet.addAction(UIAlertAction(title: "カメラ起動", style: .Default) { (action) in
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+                album.navigationBar.barTintColor = UIColor.mainColor()
+                album.sourceType = UIImagePickerControllerSourceType.Camera
+                album.delegate = self
+                self.presentViewController(album, animated: true, completion: nil)
+            }
+            
+        })
+        sheet.addAction(UIAlertAction(title: "カメラロール", style: .Default) { (action) in
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+                album.navigationBar.barTintColor = UIColor.mainColor()
+                album.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+                album.delegate = self
+                self.presentViewController(album, animated: true, completion: nil)
+            }
+        })
+        presentViewController(sheet, animated: true, completion: nil)
+        
+        
     }
     
     //MARK: Image Picker Delegate

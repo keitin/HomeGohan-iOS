@@ -11,13 +11,12 @@ import UIKit
 class MealCell: UITableViewCell {
     
     
-    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var commentLabel: UITextView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mealImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layoutNameLabel()
         self.layoutMealImageView()
         self.commentLabel.userInteractionEnabled = true
     }
@@ -30,6 +29,7 @@ class MealCell: UITableViewCell {
         self.mealImageView.sd_setImageWithURL(NSURL(string: meal.imageURL!))
         self.nameLabel.text = meal.user.name
         self.commentLabel.text = meal.text
+        self.commentLabel.sizeToFit()
     }
     
     private func layoutMealImageView() {
@@ -38,7 +38,12 @@ class MealCell: UITableViewCell {
 
     
     private func layoutNameLabel() {
+        var rect = self.commentLabel.frame
+        self.commentLabel.sizeToFit()
+        rect.size.height = CGRectGetHeight(self.commentLabel.frame)
+        commentLabel.frame = rect
+        
     }
-    
+
 
 }
