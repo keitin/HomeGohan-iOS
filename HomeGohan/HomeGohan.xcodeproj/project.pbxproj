@@ -90,6 +90,11 @@
 		32FF29A41D8B758B00836D80 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF299F1D8B758B00836D80 /* splash.png */; };
 		32FF29A51D8B758B00836D80 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29A01D8B758B00836D80 /* icon.png */; };
 		32FF29A71D8B759100836D80 /* splash_f.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29A61D8B759100836D80 /* splash_f.png */; };
+		32FF29A91D8B82F600836D80 /* camera_navi.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29A81D8B82F600836D80 /* camera_navi.png */; };
+		32FF29AC1D8B832700836D80 /* NoMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FF29AA1D8B832700836D80 /* NoMealCell.swift */; };
+		32FF29AD1D8B832700836D80 /* NoMealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29AB1D8B832700836D80 /* NoMealCell.xib */; };
+		32FF29B41D8B94F900836D80 /* hed_camera_navi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29B31D8B94F900836D80 /* hed_camera_navi@2x.png */; };
+		32FF29B61D8B975600836D80 /* okaeri.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29B51D8B975600836D80 /* okaeri.png */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -203,6 +208,11 @@
 		32FF299F1D8B758B00836D80 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		32FF29A01D8B758B00836D80 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		32FF29A61D8B759100836D80 /* splash_f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_f.png; sourceTree = "<group>"; };
+		32FF29A81D8B82F600836D80 /* camera_navi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_navi.png; sourceTree = "<group>"; };
+		32FF29AA1D8B832700836D80 /* NoMealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoMealCell.swift; sourceTree = "<group>"; };
+		32FF29AB1D8B832700836D80 /* NoMealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoMealCell.xib; sourceTree = "<group>"; };
+		32FF29B31D8B94F900836D80 /* hed_camera_navi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hed_camera_navi@2x.png"; sourceTree = "<group>"; };
+		32FF29B51D8B975600836D80 /* okaeri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okaeri.png; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -362,6 +372,7 @@
 				32301F131D8966DA00B08C3F /* GroupProf */,
 				32301F181D89671A00B08C3F /* MealCell */,
 				32301F381D899CBA00B08C3F /* MealShow */,
+				32FF29AE1D8B832B00836D80 /* NoMealCell */,
 			);
 			name = Meals;
 			sourceTree = "<group>";
@@ -401,6 +412,7 @@
 			children = (
 				3286C1841D8AAD9E00857264 /* sche_n.png */,
 				3286C1851D8AAD9E00857264 /* sche_f.png */,
+				32FF29B31D8B94F900836D80 /* hed_camera_navi@2x.png */,
 				3286C1861D8AAD9E00857264 /* time_n.png */,
 				3286C1871D8AAD9E00857264 /* time_f.png */,
 				3286C1881D8AAD9E00857264 /* album_f.png */,
@@ -409,6 +421,7 @@
 				3286C18B1D8AAD9E00857264 /* time_ff.png */,
 				3286C18C1D8AAD9E00857264 /* hed_camera.png */,
 				32FF29A61D8B759100836D80 /* splash_f.png */,
+				32FF29A81D8B82F600836D80 /* camera_navi.png */,
 				3286C18D1D8AAD9E00857264 /* pro_f.png */,
 				3286C18E1D8AAD9E00857264 /* pro_n.png */,
 				3286C18F1D8AAD9E00857264 /* hed_arrow.png */,
@@ -422,6 +435,7 @@
 				32FF29A01D8B758B00836D80 /* icon.png */,
 				3286C17F1D8AA7EE00857264 /* check_on.png */,
 				3286C1801D8AA7EE00857264 /* check_off.png */,
+				32FF29B51D8B975600836D80 /* okaeri.png */,
 				32301F601D8A412F00B08C3F /* Login */,
 				32301F231D8982F900B08C3F /* omoto.png */,
 			);
@@ -570,6 +584,15 @@
 			name = font;
 			sourceTree = "<group>";
 		};
+		32FF29AE1D8B832B00836D80 /* NoMealCell */ = {
+			isa = PBXGroup;
+			children = (
+				32FF29AA1D8B832700836D80 /* NoMealCell.swift */,
+				32FF29AB1D8B832700836D80 /* NoMealCell.xib */,
+			);
+			name = NoMealCell;
+			sourceTree = "<group>";
+		};
 		98A796D8F57F5E799093D501 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -711,6 +734,7 @@
 				32FF29971D8B5A6300836D80 /* SourceHanSansJP-Medium.otf in Resources */,
 				32FF29981D8B5A6300836D80 /* SourceHanSansJP-Regular.otf in Resources */,
 				32FF29991D8B5A6300836D80 /* SourceHanSansJP-Normal.otf in Resources */,
+				32FF29B41D8B94F900836D80 /* hed_camera_navi@2x.png in Resources */,
 				32FF299A1D8B5A6300836D80 /* SourceHanSansJP-Light.otf in Resources */,
 				32FF299B1D8B5A6300836D80 /* SourceHanSansJP-ExtraLight.otf in Resources */,
 				3286C19B1D8AAD9E00857264 /* pro_f.png in Resources */,
@@ -740,6 +764,7 @@
 				32301F621D8A5A8B00B08C3F /* Group.storyboard in Resources */,
 				3286C1921D8AAD9E00857264 /* sche_n.png in Resources */,
 				3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */,
+				32FF29A91D8B82F600836D80 /* camera_navi.png in Resources */,
 				32FF29A21D8B758B00836D80 /* pos.png in Resources */,
 				32301F5D1D8A3F4200B08C3F /* catch.png in Resources */,
 				3286C1981D8AAD9E00857264 /* time_nn.png in Resources */,
@@ -747,9 +772,11 @@
 				32301F431D8A2DD600B08C3F /* CommentCell.xib in Resources */,
 				3286C19C1D8AAD9E00857264 /* pro_n.png in Resources */,
 				32301F031D895F4F00B08C3F /* GroupProfCell.xib in Resources */,
+				32FF29AD1D8B832700836D80 /* NoMealCell.xib in Resources */,
 				3286C19D1D8AAD9E00857264 /* hed_arrow.png in Resources */,
 				32301F691D8A618800B08C3F /* StartGroupCell.xib in Resources */,
 				32FF29A41D8B758B00836D80 /* splash.png in Resources */,
+				32FF29B61D8B975600836D80 /* okaeri.png in Resources */,
 				3286C1821D8AA7EE00857264 /* check_off.png in Resources */,
 				32301ECE1D89518F00B08C3F /* Main.storyboard in Resources */,
 				3286C17E1D8AA7A600857264 /* fukidashi.png in Resources */,
@@ -901,6 +928,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32301F771D8A807100B08C3F /* GroupCell.swift in Sources */,
+				32FF29AC1D8B832700836D80 /* NoMealCell.swift in Sources */,
 				32301F511D8A3B8500B08C3F /* ResisterUserViewController.swift in Sources */,
 				32301F161D89671600B08C3F /* MealCell.swift in Sources */,
 				32301F4E1D8A3A9000B08C3F /* StartViewController.swift in Sources */,

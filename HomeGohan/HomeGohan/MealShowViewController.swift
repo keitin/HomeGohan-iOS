@@ -34,6 +34,7 @@ class MealShowViewController: UIViewController, UITableViewDelegate, UITableView
         notificationCenter.keyboardWillShow(self, selector: #selector(MealShowViewController.showWillKeyboard(_:)))
         notificationCenter.keyboardWillHide(self, selector: #selector(MealShowViewController.hideWillKeyboard(_:)))
         
+        textField.layer.borderColor = UIColor.clearColor().CGColor
 
     }
 

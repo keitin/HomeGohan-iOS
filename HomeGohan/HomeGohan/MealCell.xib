@@ -17,15 +17,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="175" id="KGk-i7-Jjw" customClass="MealCell" customModule="HomeGohan" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="353" height="158"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="MealCell" customModule="HomeGohan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="156"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="353" height="157.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="353" height="155.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ouh-ma-jr1">
-                        <rect key="frame" x="245" y="45" width="100" height="100"/>
+                        <rect key="frame" x="245" y="50" width="100" height="100"/>
                         <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="RSf-eA-tQD"/>
@@ -33,7 +33,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="シミズラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIS-vN-3cB">
-                        <rect key="frame" x="13" y="43" width="224" height="21"/>
+                        <rect key="frame" x="13" y="48" width="224" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="3cg-C6-f3S"/>
                         </constraints>
@@ -41,7 +41,7 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016.9.15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30g-cS-J9j">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016.9.16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30g-cS-J9j">
                         <rect key="frame" x="13" y="8" width="332" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="dxM-M6-p66"/>
@@ -51,47 +51,48 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnC-z2-j9z">
-                        <rect key="frame" x="13" y="30" width="332" height="2"/>
+                        <rect key="frame" x="13" y="34" width="332" height="3"/>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="2" id="nop-uD-6Oh"/>
+                            <constraint firstAttribute="height" constant="3" id="nop-uD-6Oh"/>
                         </constraints>
                     </view>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJb-dZ-uzx">
-                        <rect key="frame" x="8" y="63" width="229" height="103.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99f-CP-dH7">
+                        <rect key="frame" x="13" y="80" width="224" height="73"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="103.5" id="84N-Uy-EsY"/>
+                            <constraint firstAttribute="height" constant="73" id="zd4-el-71L"/>
                         </constraints>
-                        <string key="text">おかあさん！
-今日はね！玉ねぎいためたんだよおお！すごいでしょ！</string>
-                        <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="18"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                        <string key="text">お母さん！
+みてみてこれ！すごくない！？
+褒めて褒めて〜＾＾</string>
+                        <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="BnC-z2-j9z" firstAttribute="top" secondItem="30g-cS-J9j" secondAttribute="bottom" constant="1" id="70j-Hv-zP1"/>
+                    <constraint firstItem="99f-CP-dH7" firstAttribute="top" secondItem="kIS-vN-3cB" secondAttribute="bottom" constant="11" id="3Bd-vs-5I8"/>
+                    <constraint firstItem="BnC-z2-j9z" firstAttribute="top" secondItem="30g-cS-J9j" secondAttribute="bottom" constant="5" id="70j-Hv-zP1"/>
                     <constraint firstItem="BnC-z2-j9z" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ba0-Sa-gKl"/>
+                    <constraint firstItem="99f-CP-dH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="ECa-me-bFq"/>
                     <constraint firstItem="30g-cS-J9j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="I6K-Y8-EAP"/>
-                    <constraint firstItem="ouh-ma-jr1" firstAttribute="leading" secondItem="NJb-dZ-uzx" secondAttribute="trailing" constant="8" id="KWA-zE-MHL"/>
                     <constraint firstItem="kIS-vN-3cB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="L5x-Hc-Nh4"/>
                     <constraint firstItem="ouh-ma-jr1" firstAttribute="leading" secondItem="kIS-vN-3cB" secondAttribute="trailing" constant="8" id="Pij-0Z-WJB"/>
                     <constraint firstItem="ouh-ma-jr1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ugr-ds-z2o"/>
                     <constraint firstAttribute="trailingMargin" secondItem="30g-cS-J9j" secondAttribute="trailing" id="Ukb-Rs-z4W"/>
                     <constraint firstItem="30g-cS-J9j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="W73-yo-h1y"/>
-                    <constraint firstItem="NJb-dZ-uzx" firstAttribute="top" secondItem="BnC-z2-j9z" secondAttribute="bottom" constant="31" id="Wbl-Ud-puA"/>
+                    <constraint firstItem="ouh-ma-jr1" firstAttribute="leading" secondItem="99f-CP-dH7" secondAttribute="trailing" constant="8" id="bb4-9d-3xm"/>
                     <constraint firstItem="kIS-vN-3cB" firstAttribute="top" secondItem="BnC-z2-j9z" secondAttribute="bottom" constant="11" id="myZ-zp-aqu"/>
                     <constraint firstItem="BnC-z2-j9z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="p6N-VD-8qX"/>
                     <constraint firstItem="ouh-ma-jr1" firstAttribute="top" secondItem="BnC-z2-j9z" secondAttribute="bottom" constant="13" id="wBD-Og-m4l"/>
-                    <constraint firstItem="NJb-dZ-uzx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zcy-vj-cFl"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="commentTextView" destination="NJb-dZ-uzx" id="AMc-mp-xIr"/>
+                <outlet property="commentLabel" destination="99f-CP-dH7" id="WXe-eH-SSh"/>
                 <outlet property="mealImageView" destination="ouh-ma-jr1" id="7cc-k0-utZ"/>
                 <outlet property="nameLabel" destination="kIS-vN-3cB" id="fhH-jr-R0L"/>
             </connections>
-            <point key="canvasLocation" x="295.5" y="281"/>
+            <point key="canvasLocation" x="295.5" y="282"/>
         </tableViewCell>
     </objects>
 </document>

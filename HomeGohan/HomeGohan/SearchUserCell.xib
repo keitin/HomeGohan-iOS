@@ -21,7 +21,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-fZ-8Vi">
-                        <rect key="frame" x="18" y="21" width="49" height="49"/>
+                        <rect key="frame" x="18" y="20" width="49" height="49"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="49" id="fun-OY-uwE"/>
@@ -58,7 +58,7 @@
                     <constraint firstItem="huc-eR-bCg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YAd-Ja-v1C"/>
                     <constraint firstItem="JHx-Hd-WbO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Z9N-2w-jtU"/>
                     <constraint firstItem="jhq-k2-WpA" firstAttribute="leading" secondItem="I9G-fZ-8Vi" secondAttribute="trailing" constant="12" id="aAt-bA-QhX"/>
-                    <constraint firstItem="I9G-fZ-8Vi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="dfq-tB-fkl"/>
+                    <constraint firstItem="I9G-fZ-8Vi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="dfq-tB-fkl"/>
                     <constraint firstItem="JHx-Hd-WbO" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="eJE-Cu-XuF"/>
                     <constraint firstAttribute="bottom" secondItem="huc-eR-bCg" secondAttribute="bottom" id="gXr-iL-4qs"/>
                     <constraint firstItem="I9G-fZ-8Vi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="rPy-v4-lT7"/>

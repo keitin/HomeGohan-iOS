@@ -8,8 +8,10 @@
     <customFonts key="customFonts">
         <mutableArray key="SourceHanSansJP-Bold.otf">
             <string>SourceHanSansJP-Bold</string>
+            <string>SourceHanSansJP-Bold</string>
         </mutableArray>
         <mutableArray key="SourceHanSansJP-Medium.otf">
+            <string>SourceHanSansJP-Medium</string>
             <string>SourceHanSansJP-Medium</string>
         </mutableArray>
     </customFonts>
@@ -93,29 +95,11 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zn7-ZW-MyK">
-                                <rect key="frame" x="31" y="145" width="313" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Rm6-JR-pUq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前でログイン" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrN-7E-3OK">
-                                <rect key="frame" x="105" y="104" width="165" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8RU-jo-uiR"/>
-                                    <constraint firstAttribute="width" constant="165" id="LhF-eU-UyL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfg-Pa-Evf">
                                 <rect key="frame" x="0.0" y="548" width="375" height="55"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="0gx-yV-11g"/>
+                                    <constraint firstAttribute="height" constant="55" id="NmB-nn-MwN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
                                 <state key="normal" title="ログイン">
@@ -125,28 +109,57 @@
                                     <action selector="tapLoginButton:" destination="wUT-RR-nGn" eventType="touchUpInside" id="qtQ-Qu-P0q"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zn7-ZW-MyK">
+                                <rect key="frame" x="31" y="375" width="313" height="84"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Q7C-v6-TQV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="50"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okaeri.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Bz-QL-99d">
+                                <rect key="frame" x="0.0" y="63" width="375" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="g1r-Nz-whT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="name.png" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-1f-hCf">
+                                <rect key="frame" x="47" y="342" width="281" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="qUW-IU-eBZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zn7-ZW-MyK" firstAttribute="leading" secondItem="I6g-m7-Qoo" secondAttribute="leadingMargin" constant="15" id="BFK-hA-OkG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zn7-ZW-MyK" secondAttribute="trailing" constant="15" id="Npp-gO-8rj"/>
-                            <constraint firstItem="Wfg-Pa-Evf" firstAttribute="leading" secondItem="I6g-m7-Qoo" secondAttribute="leading" id="a4Y-rh-rwa"/>
-                            <constraint firstItem="YrN-7E-3OK" firstAttribute="top" secondItem="4KV-k1-q2n" secondAttribute="bottom" constant="104" id="aOy-vx-K3C"/>
-                            <constraint firstItem="zn7-ZW-MyK" firstAttribute="top" secondItem="YrN-7E-3OK" secondAttribute="bottom" constant="20" id="bhA-E4-WSn"/>
-                            <constraint firstItem="JzT-ZG-Gks" firstAttribute="top" secondItem="Wfg-Pa-Evf" secondAttribute="bottom" id="cH4-Zo-0pm"/>
-                            <constraint firstAttribute="trailing" secondItem="Wfg-Pa-Evf" secondAttribute="trailing" id="oMV-WT-fLz"/>
-                            <constraint firstItem="YrN-7E-3OK" firstAttribute="centerX" secondItem="I6g-m7-Qoo" secondAttribute="centerX" id="obe-6K-LTf"/>
+                            <constraint firstAttribute="trailing" secondItem="zn7-ZW-MyK" secondAttribute="trailing" constant="31" id="CiV-5r-ArX"/>
+                            <constraint firstItem="Wfg-Pa-Evf" firstAttribute="top" secondItem="zn7-ZW-MyK" secondAttribute="bottom" constant="89" id="E2z-Og-fli"/>
+                            <constraint firstItem="JzT-ZG-Gks" firstAttribute="top" secondItem="Wfg-Pa-Evf" secondAttribute="bottom" id="Hmx-LR-ql7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yjD-1f-hCf" secondAttribute="trailing" constant="27" id="Jdf-Ja-g4i"/>
+                            <constraint firstAttribute="trailing" secondItem="Wfg-Pa-Evf" secondAttribute="trailing" id="Ob6-Ay-yq9"/>
+                            <constraint firstItem="Wfg-Pa-Evf" firstAttribute="leading" secondItem="I6g-m7-Qoo" secondAttribute="leading" id="Obk-BV-55o"/>
+                            <constraint firstItem="yjD-1f-hCf" firstAttribute="leading" secondItem="I6g-m7-Qoo" secondAttribute="leadingMargin" constant="27" id="UWu-iR-yqt"/>
+                            <constraint firstItem="zn7-ZW-MyK" firstAttribute="leading" secondItem="I6g-m7-Qoo" secondAttribute="leading" constant="31" id="VI4-xH-0xt"/>
+                            <constraint firstItem="Wfg-Pa-Evf" firstAttribute="top" secondItem="yjD-1f-hCf" secondAttribute="bottom" constant="57" id="YxV-zc-6jM"/>
+                            <constraint firstItem="9Bz-QL-99d" firstAttribute="top" secondItem="4KV-k1-q2n" secondAttribute="bottom" constant="63" id="gBf-L7-kaq"/>
+                            <constraint firstItem="9Bz-QL-99d" firstAttribute="leading" secondItem="I6g-m7-Qoo" secondAttribute="leading" id="nuT-Pu-fO2"/>
+                            <constraint firstAttribute="trailing" secondItem="9Bz-QL-99d" secondAttribute="trailing" id="sHI-od-Zjy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zuM-9N-XmZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="footerHeightConst" destination="NmB-nn-MwN" id="xHY-Em-rfl"/>
+                        <outlet property="loginButton" destination="Wfg-Pa-Evf" id="YGK-B4-fjY"/>
+                        <outlet property="okaeriImageView" destination="9Bz-QL-99d" id="bSE-9F-Mgm"/>
+                        <outlet property="placeholderImageView" destination="yjD-1f-hCf" id="gxt-Ss-QQa"/>
                         <outlet property="textField" destination="zn7-ZW-MyK" id="Ltw-9d-oNL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ik-f6-yJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265.5" y="854.5"/>
+            <point key="canvasLocation" x="2889.5" y="102.5"/>
         </scene>
         <!--Resister User View Controller-->
         <scene sceneID="mYa-tE-cxd">
@@ -167,14 +180,14 @@
                                     <constraint firstAttribute="height" constant="289" id="YZp-N7-vwX"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-RG-zrQ">
-                                <rect key="frame" x="16" y="364" width="335" height="103"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-RG-zrQ">
+                                <rect key="frame" x="20" y="364" width="335" height="103"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="LzH-Uo-rvC"/>
                                     <constraint firstAttribute="height" constant="103" id="MkM-GN-yfM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="SourceHanSansJP-Bold" family="Source Han Sans JP" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pro_f.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jc3-q1-MQp">
@@ -192,7 +205,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name.png" translatesAutoresizingMaskIntoConstraints="NO" id="pj0-K5-kzP">
-                                <rect key="frame" x="92.5" y="349" width="190" height="134"/>
+                                <rect key="frame" x="92" y="349" width="190" height="134"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="54g-GR-PRS"/>
@@ -284,11 +297,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oO4-sY-jjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="834"/>
+            <point key="canvasLocation" x="1909" y="862"/>
         </scene>
     </scenes>
     <resources>
         <image name="name.png" width="307" height="281"/>
+        <image name="okaeri.png" width="926" height="824"/>
         <image name="pic.png" width="306" height="169"/>
         <image name="pro_f.png" width="252" height="252"/>
         <image name="splash_f.png" width="1280" height="2272"/>

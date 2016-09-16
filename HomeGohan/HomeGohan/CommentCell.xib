@@ -8,9 +8,9 @@
     <customFonts key="customFonts">
         <mutableArray key="SourceHanSansJP-Bold.otf">
             <string>SourceHanSansJP-Bold</string>
-            <string>SourceHanSansJP-Bold</string>
         </mutableArray>
         <mutableArray key="SourceHanSansJP-Medium.otf">
+            <string>SourceHanSansJP-Medium</string>
             <string>SourceHanSansJP-Medium</string>
         </mutableArray>
     </customFonts>
@@ -24,34 +24,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="387" height="101.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sA2-bJ-zAt">
-                        <rect key="frame" x="8" y="26" width="63" height="62"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sA2-bJ-zAt">
+                        <rect key="frame" x="8" y="24" width="63" height="63"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="63" id="GqX-vC-Ay9"/>
                             <constraint firstAttribute="height" constant="63" id="IBr-vr-8bI"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清水淳子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-An-zeL">
-                        <rect key="frame" x="94" y="24" width="70" height="16"/>
+                        <rect key="frame" x="94" y="22" width="185" height="16"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="16" id="kU0-6K-YvG"/>
+                            <constraint firstAttribute="height" constant="16" id="8aK-Lw-mf4"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="SourceHanSansJP-Bold" family="Source Han Sans JP" pointSize="15"/>
                         <color key="textColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="１分前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocT-4b-1ry">
-                        <rect key="frame" x="302" y="26" width="77" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="１分前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocT-4b-1ry">
+                        <rect key="frame" x="302" y="24" width="77" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="MC4-j2-QiY"/>
                             <constraint firstAttribute="width" constant="77" id="qUA-yP-ygm"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="SourceHanSansJP-Bold" family="Source Han Sans JP" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="SourceHanSansJP-Medium" family="Source Han Sans JP" pointSize="13"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ1-Ex-bDi">
-                        <rect key="frame" x="8" y="8" width="371" height="5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ1-Ex-bDi">
+                        <rect key="frame" x="8" y="8" width="371" height="3"/>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="3" id="rdL-sN-oUD"/>
@@ -67,18 +67,18 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ZFT-An-zeL" firstAttribute="leading" secondItem="sA2-bJ-zAt" secondAttribute="trailing" constant="23" id="3y8-cS-Ila"/>
                     <constraint firstItem="ZZ1-Ex-bDi" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="6My-qL-Ghk"/>
-                    <constraint firstItem="ocT-4b-1ry" firstAttribute="leading" secondItem="ZFT-An-zeL" secondAttribute="trailing" constant="138" id="COP-br-91A"/>
                     <constraint firstItem="ZZ1-Ex-bDi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="SEU-jY-OA0"/>
                     <constraint firstItem="ocT-4b-1ry" firstAttribute="top" secondItem="ZZ1-Ex-bDi" secondAttribute="bottom" constant="13" id="Vgd-4V-aMl"/>
+                    <constraint firstItem="ZFT-An-zeL" firstAttribute="top" secondItem="ZZ1-Ex-bDi" secondAttribute="bottom" constant="11" id="WYP-qf-5vF"/>
+                    <constraint firstItem="ocT-4b-1ry" firstAttribute="leading" secondItem="ZFT-An-zeL" secondAttribute="trailing" constant="23" id="Zdq-wA-gKK"/>
                     <constraint firstItem="kfZ-eL-JdK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="amw-5I-LHM"/>
                     <constraint firstItem="kfZ-eL-JdK" firstAttribute="leading" secondItem="sA2-bJ-zAt" secondAttribute="trailing" constant="23" id="asn-JU-nfz"/>
+                    <constraint firstItem="ZFT-An-zeL" firstAttribute="leading" secondItem="sA2-bJ-zAt" secondAttribute="trailing" constant="23" id="au8-ZJ-Jlr"/>
                     <constraint firstAttribute="bottomMargin" secondItem="kfZ-eL-JdK" secondAttribute="bottom" constant="5.5" id="dbG-95-tJE"/>
                     <constraint firstItem="ZZ1-Ex-bDi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fav-2E-8Dy"/>
                     <constraint firstItem="sA2-bJ-zAt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="k33-x0-wvW"/>
                     <constraint firstItem="sA2-bJ-zAt" firstAttribute="top" secondItem="ZZ1-Ex-bDi" secondAttribute="bottom" constant="13" id="lQE-cB-pnq"/>
-                    <constraint firstItem="ZFT-An-zeL" firstAttribute="top" secondItem="ZZ1-Ex-bDi" secondAttribute="bottom" constant="13" id="mLF-4c-ALB"/>
                     <constraint firstItem="kfZ-eL-JdK" firstAttribute="top" secondItem="ocT-4b-1ry" secondAttribute="bottom" constant="6" id="p59-aK-umo"/>
                     <constraint firstItem="ocT-4b-1ry" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xfv-eR-kun"/>
                 </constraints>

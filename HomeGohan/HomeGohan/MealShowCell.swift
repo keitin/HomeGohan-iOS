@@ -23,15 +23,15 @@ class MealShowCell: UITableViewCell {
     
     func fillWith(meal: Meal) {
         self.mealImageView.sd_setImageWithURL(NSURL(string: meal.imageURL!))
-        
-        // 行間の変更(正確には行自体の高さを変更している。)
-        let lineHeight:CGFloat = 10.0
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.minimumLineHeight = lineHeight
-        paragraphStyle.maximumLineHeight = lineHeight
-        let attributedText = NSMutableAttributedString(string: meal.text)
-        attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
-        commentLabel.attributedText = attributedText
+        self.commentLabel.text = meal.text
+//        // 行間の変更(正確には行自体の高さを変更している。)
+//        let lineHeight:CGFloat = 10.0
+//        let paragraphStyle = NSMutableParagraphStyle()
+//        paragraphStyle.minimumLineHeight = lineHeight
+//        paragraphStyle.maximumLineHeight = lineHeight
+//        let attributedText = NSMutableAttributedString(string: meal.text)
+//        attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+//        commentLabel.attributedText = attributedText
     }
     
     private func layoutMealImageView() {

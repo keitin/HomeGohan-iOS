@@ -9,7 +9,7 @@
 import UIKit
 extension UIColor {
     class func mainColor() -> UIColor {
-        return UIColor(red: 200, green: 178, blue: 152, alpha: 1.0)
+        return UIColor(red: 243/255, green: 89/255, blue: 16/255, alpha: 1.0)
     }
     
     class func textBlack() -> UIColor {

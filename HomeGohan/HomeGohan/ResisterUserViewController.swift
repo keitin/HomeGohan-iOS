@@ -38,6 +38,16 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_close"), style: .Done, target: self, action: #selector(ResisterUserViewController.closeVC(_:)))
         
+        
+        //MARK Keyboard Accessary
+        let keyboardCloseButton = UIButton(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
+        keyboardCloseButton.backgroundColor = UIColor.mainColor()
+        keyboardCloseButton.setTitle("O K", forState: .Normal)
+        keyboardCloseButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        keyboardCloseButton.addTarget(self, action: #selector(ResisterUserViewController.closeKeyboad(_:)), forControlEvents: .TouchUpInside)
+        textView.inputAccessoryView = keyboardCloseButton
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +59,9 @@ class ResisterUserViewController: UIViewController, UIImagePickerControllerDeleg
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    func closeKeyboad(sender: UIButton) {
+        textView.endEditing(true)
+    }
 
     @IBAction func tapResisterButton(sender: UIButton) {
         

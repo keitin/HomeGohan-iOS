@@ -31,11 +31,27 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_close"), style: .Done, target: self, action: #selector(NewGroupViewController.closeVC(_:)))
+        
+        //MARK Keyboard Accessary
+        let keyboardCloseButton = UIButton(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
+        keyboardCloseButton.backgroundColor = UIColor.mainColor()
+        keyboardCloseButton.setTitle("O K", forState: .Normal)
+        keyboardCloseButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        keyboardCloseButton.addTarget(self, action: #selector(NewGroupViewController.closeKeyboad(_:)), forControlEvents: .TouchUpInside)
+        textField.inputAccessoryView = keyboardCloseButton
+        
+        textField.layer.borderWidth = 2
+        textField.layer.cornerRadius = 5
+        textField.layer.borderColor = UIColor.mainColor().CGColor
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func closeKeyboad(sender: UIButton) {
+        textField.endEditing(true)
     }
     
     @IBAction func tapSearchButton(sender: UIButton) {
@@ -48,9 +64,11 @@ class NewGroupViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func tapCreateGroupButton(sender: UIButton) {
-        print(checkUserIds)
-        Group.requestCreateGroup(checkUserIds) { 
+        sender.enabled = false
+        Group.requestCreateGroup(checkUserIds) {
+            sender.enabled = true
             self.dismissViewControllerAnimated(true, completion: nil)
+            
         }
     }
     

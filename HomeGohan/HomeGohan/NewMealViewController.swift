@@ -39,11 +39,23 @@ class NewMealViewController: UIViewController, UIImagePickerControllerDelegate ,
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(NewMealViewController.tapView(_:)))
         self.view.addGestureRecognizer(gesture)
+        
+        //MARK Keyboard Accessary
+        let keyboardCloseButton = UIButton(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40))
+        keyboardCloseButton.backgroundColor = UIColor.mainColor()
+        keyboardCloseButton.setTitle("O K", forState: .Normal)
+        keyboardCloseButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        keyboardCloseButton.addTarget(self, action: #selector(NewMealViewController.closeKeyboad(_:)), forControlEvents: .TouchUpInside)
+        textView.inputAccessoryView = keyboardCloseButton
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func closeKeyboad(sender: UIButton) {
+        textView.endEditing(true)
     }
     
     // MARK Keyboard Notification

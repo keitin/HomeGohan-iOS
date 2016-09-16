@@ -10,7 +10,8 @@ import UIKit
 
 class MealCell: UITableViewCell {
     
-    @IBOutlet weak var commentTextView: UITextView!
+    
+    @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mealImageView: UIImageView!
 
@@ -18,7 +19,7 @@ class MealCell: UITableViewCell {
         super.awakeFromNib()
         self.layoutNameLabel()
         self.layoutMealImageView()
-        self.commentTextView.userInteractionEnabled = true
+        self.commentLabel.userInteractionEnabled = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -28,11 +29,7 @@ class MealCell: UITableViewCell {
     func fillWith(meal: Meal) {
         self.mealImageView.sd_setImageWithURL(NSURL(string: meal.imageURL!))
         self.nameLabel.text = meal.user.name
-        self.commentTextView.text = meal.text
-//        let style = NSMutableParagraphStyle()
-//        style.lineSpacing = 10
-//        let attributes = [NSParagraphStyleAttributeName : style]
-//        commentTextView.attributedText = NSAttributedString(string: meal.text, attributes: attributes)
+        self.commentLabel.text = meal.text
     }
     
     private func layoutMealImageView() {

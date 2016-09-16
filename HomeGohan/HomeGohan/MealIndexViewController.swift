@@ -40,10 +40,15 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     
     //MARK: Table View Delegate
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 158
+        if group.meals.isEmpty {
+            return 178
+        } else {
+            return 158
+        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if group.meals.isEmpty { return }
         let meal = group.meals[indexPath.row]
         let mealShowVC = UIStoryboard.viewControllerWith("Meal", identifier: "MealShowViewController") as! MealShowViewController
         mealShowVC.meal = meal
@@ -64,17 +69,27 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return group.meals.count
+        if group.meals.isEmpty {
+            return 1
+        } else {
+            return group.meals.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MealCell", forIndexPath: indexPath) as! MealCell
-        cell.fillWith(group.meals[indexPath.row])
-        return cell
+        if group.meals.isEmpty {
+            let cell = tableView.dequeueReusableCellWithIdentifier("NoMealCell", forIndexPath: indexPath) as! NoMealCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("MealCell", forIndexPath: indexPath) as! MealCell
+            cell.fillWith(group.meals[indexPath.row])
+            return cell
+        }
     }
     
     private func registerCell() {
         self.tableView.registerCell("MealCell")
+        self.tableView.registerCell("NoMealCell")
     }
     
     
@@ -85,7 +100,7 @@ class MealIndexViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     private func addSubViewBarItems() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .Done, target: self, action: #selector(MealIndexViewController.modalNewMealVC(_:)))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "hed_camera_navi"), style: .Done, target: self, action: #selector(MealIndexViewController.modalNewMealVC(_:)))
     }
     
     
