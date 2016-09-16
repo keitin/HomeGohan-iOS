@@ -62,7 +62,7 @@ class Group {
                     let json = JSON(value)
                     for mealJSON in json["meals"].array! {
                         let meal = Meal(json: mealJSON)
-                        self.meals.append(meal)
+                        self.meals.insert(meal, atIndex: 0)
                         completion()
                     }
                 case .Failure(let error):

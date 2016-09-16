@@ -9,11 +9,14 @@
 import UIKit
 
 class StartViewController: UIViewController {
+    
+    @IBOutlet weak var resisterButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        resisterButton.layer.cornerRadius = 5
+        resisterButton.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

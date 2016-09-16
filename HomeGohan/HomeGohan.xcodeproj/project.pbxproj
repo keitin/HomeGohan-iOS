@@ -84,6 +84,12 @@
 		32FF29991D8B5A6300836D80 /* SourceHanSansJP-Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29921D8B045600836D80 /* SourceHanSansJP-Normal.otf */; };
 		32FF299A1D8B5A6300836D80 /* SourceHanSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29931D8B045600836D80 /* SourceHanSansJP-Light.otf */; };
 		32FF299B1D8B5A6300836D80 /* SourceHanSansJP-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29941D8B045600836D80 /* SourceHanSansJP-ExtraLight.otf */; };
+		32FF29A11D8B758B00836D80 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF299C1D8B758B00836D80 /* comment.png */; };
+		32FF29A21D8B758B00836D80 /* pos.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF299D1D8B758B00836D80 /* pos.png */; };
+		32FF29A31D8B758B00836D80 /* love_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF299E1D8B758B00836D80 /* love_user.png */; };
+		32FF29A41D8B758B00836D80 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF299F1D8B758B00836D80 /* splash.png */; };
+		32FF29A51D8B758B00836D80 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29A01D8B758B00836D80 /* icon.png */; };
+		32FF29A71D8B759100836D80 /* splash_f.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FF29A61D8B759100836D80 /* splash_f.png */; };
 		7D3411452397FF902EE204BC /* Pods_HomeGohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01773023B0E70CF1A9794D86 /* Pods_HomeGohanUITests.framework */; };
 		A941B8332616D829A9D1CCDF /* Pods_HomeGohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835470F73177CBB654063135 /* Pods_HomeGohan.framework */; };
 		C6716ADC324D15E6D84FFE58 /* Pods_HomeGohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03EC7A6D6C079A67F72BF6D /* Pods_HomeGohanTests.framework */; };
@@ -191,6 +197,12 @@
 		32FF29921D8B045600836D80 /* SourceHanSansJP-Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Normal.otf"; sourceTree = "<group>"; };
 		32FF29931D8B045600836D80 /* SourceHanSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-Light.otf"; sourceTree = "<group>"; };
 		32FF29941D8B045600836D80 /* SourceHanSansJP-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansJP-ExtraLight.otf"; sourceTree = "<group>"; };
+		32FF299C1D8B758B00836D80 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		32FF299D1D8B758B00836D80 /* pos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pos.png; sourceTree = "<group>"; };
+		32FF299E1D8B758B00836D80 /* love_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = love_user.png; sourceTree = "<group>"; };
+		32FF299F1D8B758B00836D80 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		32FF29A01D8B758B00836D80 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		32FF29A61D8B759100836D80 /* splash_f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_f.png; sourceTree = "<group>"; };
 		58D6402D74EB7FBB300A247F /* Pods-HomeGohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohan/Pods-HomeGohan.release.xcconfig"; sourceTree = "<group>"; };
 		835470F73177CBB654063135 /* Pods_HomeGohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeGohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A248070DF883DC5F8E1B493C /* Pods-HomeGohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeGohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeGohanTests/Pods-HomeGohanTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -396,12 +408,18 @@
 				3286C18A1D8AAD9E00857264 /* time_nn.png */,
 				3286C18B1D8AAD9E00857264 /* time_ff.png */,
 				3286C18C1D8AAD9E00857264 /* hed_camera.png */,
+				32FF29A61D8B759100836D80 /* splash_f.png */,
 				3286C18D1D8AAD9E00857264 /* pro_f.png */,
 				3286C18E1D8AAD9E00857264 /* pro_n.png */,
 				3286C18F1D8AAD9E00857264 /* hed_arrow.png */,
 				3286C1A01D8ACC8500857264 /* hed_close@2x.png */,
 				3286C1911D8AAD9E00857264 /* hed_menu.png */,
 				3286C17D1D8AA7A600857264 /* fukidashi.png */,
+				32FF299C1D8B758B00836D80 /* comment.png */,
+				32FF299D1D8B758B00836D80 /* pos.png */,
+				32FF299E1D8B758B00836D80 /* love_user.png */,
+				32FF299F1D8B758B00836D80 /* splash.png */,
+				32FF29A01D8B758B00836D80 /* icon.png */,
 				3286C17F1D8AA7EE00857264 /* check_on.png */,
 				3286C1801D8AA7EE00857264 /* check_off.png */,
 				32301F601D8A412F00B08C3F /* Login */,
@@ -689,6 +707,7 @@
 			files = (
 				32FF29951D8B5A6300836D80 /* SourceHanSansJP-Heavy.otf in Resources */,
 				32FF29961D8B5A6300836D80 /* SourceHanSansJP-Bold.otf in Resources */,
+				32FF29A51D8B758B00836D80 /* icon.png in Resources */,
 				32FF29971D8B5A6300836D80 /* SourceHanSansJP-Medium.otf in Resources */,
 				32FF29981D8B5A6300836D80 /* SourceHanSansJP-Regular.otf in Resources */,
 				32FF29991D8B5A6300836D80 /* SourceHanSansJP-Normal.otf in Resources */,
@@ -698,12 +717,15 @@
 				32301F5C1D8A3F4200B08C3F /* name.png in Resources */,
 				32301F781D8A807100B08C3F /* GroupCell.xib in Resources */,
 				32301F171D89671600B08C3F /* MealCell.xib in Resources */,
+				32FF29A31D8B758B00836D80 /* love_user.png in Resources */,
 				3286C1951D8AAD9E00857264 /* time_f.png in Resources */,
 				32301F4C1D8A38E300B08C3F /* User.storyboard in Resources */,
+				32FF29A71D8B759100836D80 /* splash_f.png in Resources */,
 				32301F371D899CB600B08C3F /* MealShowCell.xib in Resources */,
 				3286C1971D8AAD9E00857264 /* album_n.png in Resources */,
 				3286C1811D8AA7EE00857264 /* check_on.png in Resources */,
 				3286C19A1D8AAD9E00857264 /* hed_camera.png in Resources */,
+				32FF29A11D8B758B00836D80 /* comment.png in Resources */,
 				32301ED31D89518F00B08C3F /* LaunchScreen.storyboard in Resources */,
 				3286C1961D8AAD9E00857264 /* album_f.png in Resources */,
 				32301F241D8982F900B08C3F /* omoto.png in Resources */,
@@ -718,6 +740,7 @@
 				32301F621D8A5A8B00B08C3F /* Group.storyboard in Resources */,
 				3286C1921D8AAD9E00857264 /* sche_n.png in Resources */,
 				3286C1A11D8ACC8500857264 /* hed_close@2x.png in Resources */,
+				32FF29A21D8B758B00836D80 /* pos.png in Resources */,
 				32301F5D1D8A3F4200B08C3F /* catch.png in Resources */,
 				3286C1981D8AAD9E00857264 /* time_nn.png in Resources */,
 				32301ED01D89518F00B08C3F /* Assets.xcassets in Resources */,
@@ -726,6 +749,7 @@
 				32301F031D895F4F00B08C3F /* GroupProfCell.xib in Resources */,
 				3286C19D1D8AAD9E00857264 /* hed_arrow.png in Resources */,
 				32301F691D8A618800B08C3F /* StartGroupCell.xib in Resources */,
+				32FF29A41D8B758B00836D80 /* splash.png in Resources */,
 				3286C1821D8AA7EE00857264 /* check_off.png in Resources */,
 				32301ECE1D89518F00B08C3F /* Main.storyboard in Resources */,
 				3286C17E1D8AA7A600857264 /* fukidashi.png in Resources */,
